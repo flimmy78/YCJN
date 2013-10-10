@@ -1,0 +1,222 @@
+﻿
+body{ background-color: #E3EDF8; font-size: 12px; font-family: 宋体}
+input{font-size:15px}
+select{font-size:15px}
+textarea{font-size:15px}
+td{font-size:15px}
+span{font-size:15px}
+th{font-size:15px}
+
+
+
+
+
+/*操作菜单*/
+.lnkOper
+{ 
+	font-size: 15px;
+	color: #FFFFFF;
+	cursor:hand;
+	text-decoration: none;
+}
+
+/*导航菜单*/
+.lnkNav
+{
+	font-size: 15px; 
+	color: #2B4E75; 
+	background:"images/15.gif";
+	cursor:hand;
+	text-decoration: none;
+}
+
+
+
+
+/*Tab页选中*/
+.tabPageCaptionChecked
+{
+}
+
+/*Tab页未选中*/
+.tabPageCaptionUnchecked
+{
+}
+
+/*分组框表格*/
+.groupBox 
+{   
+	display:  table;   
+	width:100%;  
+	border-right: #AFC5F4 1px solid;
+	border-top: #AFC5F4 1px solid;
+	border-left: #AFC5F4 1px solid;
+	border-bottom: #AFC5F4 1px solid;
+	height:25px;
+	height:auto!important;
+}
+
+/*
+.tablediv2 
+{   
+	display:  table;   
+	width:auto;  
+	height:5;
+} 
+*/
+
+/*分组框标题*/
+.groupBox .groupBoxCaption
+{   
+	width:100%;
+	border:0;
+	cellspacing:0;
+	cellpadding:0;
+	filter:progid:DXImageTransform.Microsoft.Gradient(startColorStr='#DAEFFF', endColorStr='#98C3F7', gradientType='0');
+	height:25px;
+} 
+
+/*分组框容器*/
+.groupBox .groupBoxContainer
+{   
+	width:100%;
+	filter:progid:DXImageTransform.Microsoft.Gradient(startColorStr='#D4EBFE', endColorStr='#BEDDFE', gradientType='0');
+} 
+
+
+
+/*分组框标题文字*/
+.groupBox .groupBoxCaption .groupBoxCaptionText
+{
+	font-size: 15px;
+	font-weight: bold;
+	color: #1E477D;
+	text-indent: 15pt;   
+	height:20px;
+}
+/*分组框标签文字*/
+.groupBox .groupBoxContainer .groupBoxLabel2 {
+	font-size: 15px;
+	color: #333333;
+	letter-spacing: 27pt;
+	text-indent: 8pt;
+}
+.groupBox .groupBoxContainer .groupBoxLabel3{
+	font-size: 15px;
+	color: #333333;
+	letter-spacing:9pt;
+	text-indent: 8pt;
+}
+.groupBox .groupBoxContainer .groupBoxLabel4 {
+	font-size: 15px;
+	color: #333333;
+	letter-spacing: 3pt;
+	text-indent: 8pt;
+}
+.groupBox .groupBoxContainer .groupBoxLabel5{
+	font-size: 15px;
+	color: #333333;
+	text-indent: 8pt;
+	letter-spacing: 1pt;
+}
+.groupBox .groupBoxContainer .groupBoxLabel6 {
+	font-size: 15px;
+	color: #333333;
+	letter-spacing: 1px;
+}
+
+/*GridView列表样式*/
+.grid
+{
+	text-align:center;
+	
+}
+/*GridView列表表头样式*/
+.grid th
+{
+	height:25px;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+	background-color:#CFE6FC;
+	text-align:center;
+	/*color: #1E477F;
+	
+	/*filter:progid:DXImageTransform.Microsoft.Gradient(startColorStr='#D6F0FF', endColorStr='#71C2F5', gradientType='0');*/
+}
+/*GridView列表数据行样式*/
+.grid tr
+{
+	height:20px;
+	font-size: 9px;
+	/*color: #333333;*/
+	text-align: center;
+	background-color:expression((this.sectionRowIndex%2==0)?"#F2FAFB":"white");
+	/*background-color:expression((this.sectionRowIndex%2==0)?"white":"#F2FAFB");
+	/*background-color:expression((this.sectionRowIndex%2==0)?"white":"#999999");*/
+}
+/*GridView列表数据行激活状态样式*/
+.grid .ActiveRowStyle
+{
+	font-size: 15px;
+	color: #A0420C;
+	text-align: center;
+	background:#FFFFFF;
+}
+/*GridView收件状态为必收件样式*/
+.grid .MustSJD
+{
+	font-size: 15px;
+	color: #A0420C;
+	text-align: center;
+	background:red;
+}
+
+
+
+
+
+
+
+
+
+/*权属调查及登记审批*/
+/*分组框标题文字*/
+.groupBox .groupBoxCaptionText
+{
+	font-size: 15px;
+	font-weight: bold;
+	color: #1E477D;
+	text-indent: 15pt;   
+	height:20px;
+}
+/*分组框标签文字*/
+.groupBox .groupBoxLabel2 {
+	font-size: 15px;
+	color: #333333;
+	letter-spacing: 27pt;
+	text-indent: 8pt;
+}
+.groupBox .groupBoxLabel3{
+	font-size: 15px;
+	color: #333333;
+	letter-spacing:9pt;
+	text-indent: 8pt;
+}
+.groupBox .groupBoxLabel4 {
+	font-size: 15px;
+	color: #333333;
+	letter-spacing: 3pt;
+	text-indent: 8pt;
+}
+.groupBox .groupBoxLabel5{
+	font-size: 15px;
+	color: #333333;
+	text-indent: 8pt;
+	letter-spacing: 1pt;
+}
+.groupBox .groupBoxLabel6 {
+	font-size: 15px;
+	color: #333333;
+	letter-spacing: 1px;
+}

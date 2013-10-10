@@ -1,0 +1,2051 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E2176044-7A0E-4D45-829A-AAC73350C1B0}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DJXT</RootNamespace>
+    <AssemblyName>DJXT</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.5.40412.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <HintPath>bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="FineUI, Version=3.2.3.0, Culture=neutral, PublicKeyToken=0ff1835d01c384a9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\FineUI.dll</HintPath>
+    </Reference>
+    <Reference Include="FineUI.Examples, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\FineUI.Examples.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.PiLink">
+      <HintPath>D:\AjaxCSSIS\AjaxWeb\Bin\Interop.PiLink.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\shan\DJXT\DJXT\bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SAC.DB2, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SAC.DB2\bin\Debug\SAC.DB2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Extensions.Design" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Wisesoft.Web.Control">
+      <HintPath>bin\Wisesoft.Web.Control.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ConsumeIndicator\Chart.aspx" />
+    <Content Include="ConsumeIndicator\ChartDetail.aspx" />
+    <Content Include="ConsumeIndicator\data.aspx" />
+    <Content Include="ConsumeIndicator\InsertChartDetail.aspx" />
+    <Content Include="ConsumeIndicator\InsertData.aspx" />
+    <Content Include="ContentPage.aspx" />
+    <Content Include="css\help3.css" />
+    <Content Include="css\highslide.css" />
+    <Content Include="css\info.css" />
+    <Content Include="css\master.css" />
+    <Content Include="css\My97DatePicker\calendar.js" />
+    <Content Include="css\My97DatePicker\config.js" />
+    <Content Include="css\My97DatePicker\lang\en.js" />
+    <Content Include="css\My97DatePicker\lang\zh-cn.js" />
+    <Content Include="css\My97DatePicker\lang\zh-tw.js" />
+    <Content Include="css\My97DatePicker\My97DatePicker.htm" />
+    <Content Include="css\My97DatePicker\skin\datePicker.gif" />
+    <Content Include="css\My97DatePicker\skin\default\datepicker.css" />
+    <Content Include="css\My97DatePicker\skin\default\img.gif" />
+    <Content Include="css\My97DatePicker\skin\WdatePicker.css" />
+    <Content Include="css\My97DatePicker\skin\whyGreen\bg.jpg" />
+    <Content Include="css\My97DatePicker\skin\whyGreen\datepicker.css" />
+    <Content Include="css\My97DatePicker\skin\whyGreen\img.gif" />
+    <Content Include="css\My97DatePicker\WdatePicker.js" />
+    <Content Include="css\My97DatePicker\开发包\lang\en.js" />
+    <Content Include="css\My97DatePicker\开发包\lang\zh-cn.js" />
+    <Content Include="css\My97DatePicker\开发包\lang\zh-tw.js" />
+    <Content Include="css\My97DatePicker\开发包\readme.txt" />
+    <Content Include="css\My97DatePicker\开发包\skin\datePicker.gif" />
+    <Content Include="css\My97DatePicker\开发包\skin\default\datepicker.css" />
+    <Content Include="css\My97DatePicker\开发包\skin\default\img.gif" />
+    <Content Include="css\My97DatePicker\开发包\skin\WdatePicker.css" />
+    <Content Include="css\My97DatePicker\开发包\skin\whyGreen\bg.jpg" />
+    <Content Include="css\My97DatePicker\开发包\skin\whyGreen\datepicker.css" />
+    <Content Include="css\My97DatePicker\开发包\skin\whyGreen\img.gif" />
+    <Content Include="css\update8.css" />
+    <Content Include="css\zTreeStyle\djxt.css" />
+    <Content Include="css\zTreeStyle\img\diy\1_close.png" />
+    <Content Include="css\zTreeStyle\img\diy\1_open.png" />
+    <Content Include="css\zTreeStyle\img\diy\2.png" />
+    <Content Include="css\zTreeStyle\img\diy\3.png" />
+    <Content Include="css\zTreeStyle\img\diy\4.png" />
+    <Content Include="css\zTreeStyle\img\diy\5.png" />
+    <Content Include="css\zTreeStyle\img\diy\6.png" />
+    <Content Include="css\zTreeStyle\img\diy\7.png" />
+    <Content Include="css\zTreeStyle\img\diy\8.png" />
+    <Content Include="css\zTreeStyle\img\diy\9.png" />
+    <Content Include="css\zTreeStyle\img\line_conn.gif" />
+    <Content Include="css\zTreeStyle\img\loading.gif" />
+    <Content Include="css\zTreeStyle\img\zTreeStandard.gif" />
+    <Content Include="css\zTreeStyle\img\zTreeStandard.png" />
+    <Content Include="css\zTreeStyle\zTreeStyle.css" />
+    <Content Include="DataFile\GetBenchmarkReference.aspx" />
+    <Content Include="DataFile\GetBoilerCalculation.aspx" />
+    <Content Include="DataFile\GetCompareAnalyseData.aspx" />
+    <Content Include="DataFile\GetProductionProPara.aspx" />
+    <Content Include="DataFile\GetRealQueryData.aspx" />
+    <Content Include="DataFile\GetSteamTurbine.aspx" />
+    <Content Include="DataFile\GETWarningThresholdData.aspx" />
+    <Content Include="DataFile\Get_Chart_Data.aspx" />
+    <Content Include="DataManage\UnitDataManage.aspx" />
+    <Content Include="Device\Device.aspx" />
+    <Content Include="Device\DevNew.aspx" />
+    <Content Include="Device\msgInfo.aspx" />
+    <Content Include="EquipmentReliable\Analyse.aspx" />
+    <Content Include="EquipmentReliable\Analysis.aspx" />
+    <Content Include="EquipmentReliable\IndicatorQuery.aspx" />
+    <Content Include="EquipmentReliable\Monitor.aspx" />
+    <Content Include="EquipmentReliable\ProcessParameter.aspx" />
+    <Content Include="EquipmentReliable\ReliabilityDescription.aspx" />
+    <Content Include="EquipmentReliable\UnplannedOutageEdit.aspx" />
+    <Content Include="Files\admin.jpg" />
+    <Content Include="Files\administrator.jpg" />
+    <Content Include="Files\liming.jpg" />
+    <Content Include="Files\lisi.jpg" />
+    <Content Include="Files\wangfeng.jpg" />
+    <Content Include="Files\wangyang.jpg" />
+    <Content Include="Head.aspx" />
+    <Content Include="HomePage.aspx" />
+    <Content Include="img\a.gif" />
+    <Content Include="img\back_small.png" />
+    <Content Include="img\banner.jpg" />
+    <Content Include="img\banner_02.jpg" />
+    <Content Include="img\bg08.jpg" />
+    <Content Include="img\bg09.png" />
+    <Content Include="img\bg10.png" />
+    <Content Include="img\bg11.png" />
+    <Content Include="img\bsqdllr.bmp" />
+    <Content Include="img\button.jpg" />
+    <Content Include="img\button2.jpg" />
+    <Content Include="img\button_bg.gif" />
+    <Content Include="img\bzsjsglr.bmp" />
+    <Content Include="img\Close.gif" />
+    <Content Include="img\content-bg.gif" />
+    <Content Include="img\cs.gif" />
+    <Content Include="img\cswh.bmp" />
+    <Content Include="img\cydjb.bmp" />
+    <Content Include="img\cydnb.bmp" />
+    <Content Include="img\cydnmx.bmp" />
+    <Content Include="img\cydrb.bmp" />
+    <Content Include="img\cydwh.bmp" />
+    <Content Include="img\cydyb.bmp" />
+    <Content Include="img\cydymx.bmp" />
+    <Content Include="img\cydzb.bmp" />
+    <Content Include="img\displayreport.gif" />
+    <Content Include="img\djxt-sy-bc-2.jpg" />
+    <Content Include="img\djxt-sy-bc-5.jpg" />
+    <Content Include="img\djxt-sy-bc-6.jpg" />
+    <Content Include="img\djxt-sy-bc.jpg" />
+    <Content Include="img\dlcdbwh.bmp" />
+    <Content Include="img\dlsjwh.bmp" />
+    <Content Include="img\dqzb.bmp" />
+    <Content Include="img\dv.bmp" />
+    <Content Include="img\e-handle.jpg" />
+    <Content Include="img\edit.png" />
+    <Content Include="img\EditGK.gif" />
+    <Content Include="img\EditPara.gif" />
+    <Content Include="img\erqcrb.bmp" />
+    <Content Include="img\erqcyb.bmp" />
+    <Content Include="img\Experiment.gif" />
+    <Content Include="img\ExpirmentReport.gif" />
+    <Content Include="img\ExprimentContent.gif" />
+    <Content Include="img\fdjlr.bmp" />
+    <Content Include="img\fjdllr.bmp" />
+    <Content Include="img\footer.jpg" />
+    <Content Include="img\fscydl.bmp" />
+    <Content Include="img\glqcnmxcx.bmp" />
+    <Content Include="img\glwh.bmp" />
+    <Content Include="img\glzb.bmp" />
+    <Content Include="img\glzbjb.bmp" />
+    <Content Include="img\glzbjd.bmp" />
+    <Content Include="img\glzbnb.bmp" />
+    <Content Include="img\glzbnmx.bmp" />
+    <Content Include="img\glzbnmx1.bmp" />
+    <Content Include="img\glzbnmx2.bmp" />
+    <Content Include="img\glzbrcx.bmp" />
+    <Content Include="img\glzbyb.bmp" />
+    <Content Include="img\glzbymx.bmp" />
+    <Content Include="img\glzbymx1.bmp" />
+    <Content Include="img\glzbymx2.bmp" />
+    <Content Include="img\Grid_1.jpg" />
+    <Content Include="img\Grid_2.jpg" />
+    <Content Include="img\Grid_3.jpg" />
+    <Content Include="img\Grid_4.jpg" />
+    <Content Include="img\hv.bmp" />
+    <Content Include="img\jiantou.png" />
+    <Content Include="img\LeftMenuTree_12.jpg" />
+    <Content Include="img\loading.gif" />
+    <Content Include="img\lsgkdb.jpg" />
+    <Content Include="img\ManageBCTime.jpg" />
+    <Content Include="img\ManageBZ.jpg" />
+    <Content Include="img\ManageMenu.jpg" />
+    <Content Include="img\ManageMenuW_01.jpg" />
+    <Content Include="img\ManageMenuW_02.jpg" />
+    <Content Include="img\ManageMenuW_03.jpg" />
+    <Content Include="img\ManageMenuW_04.jpg" />
+    <Content Include="img\ManageMenuW_05.jpg" />
+    <Content Include="img\ManageMenuW_06.jpg" />
+    <Content Include="img\ManageMenuW_07.jpg" />
+    <Content Include="img\ManageMenuW_08.jpg" />
+    <Content Include="img\ManageMenuW_09.jpg" />
+    <Content Include="img\ManageMenuW_10.jpg" />
+    <Content Include="img\ManageMenuW_11.jpg" />
+    <Content Include="img\ManageMenuW_12.jpg" />
+    <Content Include="img\ManageMenuW_13.jpg" />
+    <Content Include="img\ManageMenuW_14.jpg" />
+    <Content Include="img\ManageMenuW_15.jpg" />
+    <Content Include="img\ManageMenuW_16.jpg" />
+    <Content Include="img\ManageMenuW_17.jpg" />
+    <Content Include="img\ManageMenu_01.jpg" />
+    <Content Include="img\ManageMenu_02.jpg" />
+    <Content Include="img\ManageMenu_03.jpg" />
+    <Content Include="img\ManageMenu_04.jpg" />
+    <Content Include="img\ManageMenu_05.jpg" />
+    <Content Include="img\ManageMenu_06.jpg" />
+    <Content Include="img\ManageMenu_07.jpg" />
+    <Content Include="img\ManageMenu_08.jpg" />
+    <Content Include="img\ManageMenu_09.jpg" />
+    <Content Include="img\ManagePBSet.jpg" />
+    <Content Include="img\ManagePower.jpg" />
+    <Content Include="img\ManagePower_01.jpg" />
+    <Content Include="img\ManagePower_02.jpg" />
+    <Content Include="img\ManagePower_03.jpg" />
+    <Content Include="img\ManagePower_04.jpg" />
+    <Content Include="img\ManagePower_05.jpg" />
+    <Content Include="img\ManagePower_06.jpg" />
+    <Content Include="img\ManagePower_07.jpg" />
+    <Content Include="img\ManagePower_08.jpg" />
+    <Content Include="img\ManagePower_09.jpg" />
+    <Content Include="img\ManagePower_10.jpg" />
+    <Content Include="img\ManagePower_11.jpg" />
+    <Content Include="img\ManagePower_12.jpg" />
+    <Content Include="img\ManagePower_13.jpg" />
+    <Content Include="img\ManagePower_14.jpg" />
+    <Content Include="img\ManagePower_15.jpg" />
+    <Content Include="img\ManagePower_16.jpg" />
+    <Content Include="img\ManagePower_17.jpg" />
+    <Content Include="img\ManagePower_18.jpg" />
+    <Content Include="img\ManagePower_19.jpg" />
+    <Content Include="img\ManagePower_20.jpg" />
+    <Content Include="img\ManagePower_21.jpg" />
+    <Content Include="img\ManagePower_22.jpg" />
+    <Content Include="img\ManagePower_23.jpg" />
+    <Content Include="img\ManagePower_24.jpg" />
+    <Content Include="img\ManageRole.jpg" />
+    <Content Include="img\ManageUser.jpg" />
+    <Content Include="img\Manage_01.jpg" />
+    <Content Include="img\Manage_02.jpg" />
+    <Content Include="img\Manage_03.jpg" />
+    <Content Include="img\Manage_04.jpg" />
+    <Content Include="img\Manage_05.jpg" />
+    <Content Include="img\Manage_06.jpg" />
+    <Content Include="img\Manage_07.jpg" />
+    <Content Include="img\Manage_08.jpg" />
+    <Content Include="img\Manage_09.jpg" />
+    <Content Include="img\Manage_10.jpg" />
+    <Content Include="img\Manage_11.jpg" />
+    <Content Include="img\Manage_12.jpg" />
+    <Content Include="img\Manage_13.jpg" />
+    <Content Include="img\Manage_14.jpg" />
+    <Content Include="img\Manage_15.jpg" />
+    <Content Include="img\Manage_16.jpg" />
+    <Content Include="img\Manage_17.jpg" />
+    <Content Include="img\Manage_18.jpg" />
+    <Content Include="img\Manage_19.jpg" />
+    <Content Include="img\Manage_20.jpg" />
+    <Content Include="img\Manage_21.jpg" />
+    <Content Include="img\Manage_22.jpg" />
+    <Content Include="img\Manage_23.jpg" />
+    <Content Include="img\Manage_24.jpg" />
+    <Content Include="img\Manage_25.jpg" />
+    <Content Include="img\Manage_26.jpg" />
+    <Content Include="img\menuedit.jpg" />
+    <Content Include="img\MENU_1_bg.gif" />
+    <Content Include="img\MENU_2_bg.gif" />
+    <Content Include="img\middle-button.jpg" />
+    <Content Include="img\middle.jpg" />
+    <Content Include="img\operation.gif" />
+    <Content Include="img\PB-add-1.jpg" />
+    <Content Include="img\PB-add-2.jpg" />
+    <Content Include="img\PB-no-1.jpg" />
+    <Content Include="img\PB-no-2.jpg" />
+    <Content Include="img\PB-remove-1.jpg" />
+    <Content Include="img\PB-remove-2.jpg" />
+    <Content Include="img\PB-save-1.jpg" />
+    <Content Include="img\PB-save-2.jpg" />
+    <Content Include="img\qjqcnmx.bmp" />
+    <Content Include="img\qjwh.bmp" />
+    <Content Include="img\qjzb.bmp" />
+    <Content Include="img\qjzbjb.bmp" />
+    <Content Include="img\qjzbjd.bmp" />
+    <Content Include="img\qjzbnb.bmp" />
+    <Content Include="img\qjzbnmx.bmp" />
+    <Content Include="img\qjzbnmx1.bmp" />
+    <Content Include="img\qjzbnmx2.bmp" />
+    <Content Include="img\qjzbrcx.bmp" />
+    <Content Include="img\qjzbyb.bmp" />
+    <Content Include="img\qjzbymx.bmp" />
+    <Content Include="img\qjzbymx1.bmp" />
+    <Content Include="img\qjzbymx2.bmp" />
+    <Content Include="img\qtjl.bmp" />
+    <Content Include="img\quyu.bmp" />
+    <Content Include="img\rb_logo.png" />
+    <Content Include="img\recur.png" />
+    <Content Include="img\red.gif" />
+    <Content Include="img\right.bmp" />
+    <Content Include="img\right1.bmp" />
+    <Content Include="img\right2.bmp" />
+    <Content Include="img\right3.bmp" />
+    <Content Include="img\RoleList.jpg" />
+    <Content Include="img\rsjsglr.bmp" />
+    <Content Include="img\search.png" />
+    <Content Include="img\ssgkdb.jpg" />
+    <Content Include="img\table-head-2.jpg" />
+    <Content Include="img\table-head-3.jpg" />
+    <Content Include="img\table-head.gif" />
+    <Content Include="img\table-head.jpg" />
+    <Content Include="img\ThermalTestCfg.gif" />
+    <Content Include="img\tree_file.gif" />
+    <Content Include="img\tree_file.jpg" />
+    <Content Include="img\tree_folder.gif" />
+    <Content Include="img\tree_folder.jpg" />
+    <Content Include="img\visible0.gif" />
+    <Content Include="img\visible1.gif" />
+    <Content Include="img\wrong.bmp" />
+    <Content Include="img\xldllr.bmp" />
+    <Content Include="img\yj.gif" />
+    <Content Include="img\yj1.gif" />
+    <Content Include="img\zbdllr.bmp" />
+    <Content Include="img\zhhzbjd.bmp" />
+    <Content Include="img\zhqczbnmx.bmp" />
+    <Content Include="img\zhwh.bmp" />
+    <Content Include="img\zhzb.bmp" />
+    <Content Include="img\zhzbjb.bmp" />
+    <Content Include="img\zhzbnmx.bmp" />
+    <Content Include="img\zhzbnmx1.bmp" />
+    <Content Include="img\zhzbnmx2.bmp" />
+    <Content Include="img\zhzbrcx.bmp" />
+    <Content Include="img\zhzbyb.bmp" />
+    <Content Include="img\zhzbymx.bmp" />
+    <Content Include="img\zhzbymx1.bmp" />
+    <Content Include="img\zhzbymx2.bmp" />
+    <Content Include="jQueryEasyUI\css\djxt.css" />
+    <Content Include="jQueryEasyUI\demo\demo.css" />
+    <Content Include="jQueryEasyUI\easyloader.js" />
+    <Content Include="jQueryEasyUI\jquery-1.4.4.min.js" />
+    <Content Include="jQueryEasyUI\jquery-1.6.2.js" />
+    <Content Include="jQueryEasyUI\jquery.easyui.min.js" />
+    <Content Include="jQueryEasyUI\locale\easyui-lang-af.js" />
+    <Content Include="jQueryEasyUI\locale\easyui-lang-bg.js" />
+    <Content Include="jQueryEasyUI\locale\easyui-lang-ca.js" />
+    <Content Include="jQueryEasyUI\locale\easyui-lang-cs.js" />
+    <Content Include="jQueryEasyUI\locale\easyui-lang-cz.js" />
+    <Content Include="jQueryEasyUI\locale\easyui-lang-da.js" />
+    <Content Include="jQueryEasyUI\locale\easyui-lang-de.js" />
+    <Content Include="jQueryEasyUI\locale\easyui-lang-en.js" />
+    <Content Include="jQueryEasyUI\locale\easyui-lang-es.js" />
+    <Content Include="jQueryEasyUI\locale\easyui-lang-fr.js" />
+    <Content Include="jQueryEasyUI\locale\easyui-lang-nl.js" />
+    <Content Include="jQueryEasyUI\locale\easyui-lang-pt_BR.js" />
+    <Content Include="jQueryEasyUI\locale\easyui-lang-ru.js" />
+    <Content Include="jQueryEasyUI\locale\easyui-lang-tr.js" />
+    <Content Include="jQueryEasyUI\locale\easyui-lang-zh_CN.js" />
+    <Content Include="jQueryEasyUI\locale\easyui-lang-zh_TW.js" />
+    <Content Include="jQueryEasyUI\plugins\jquery.accordion.js" />
+    <Content Include="jQueryEasyUI\plugins\jquery.calendar.js" />
+    <Content Include="jQueryEasyUI\plugins\jquery.combo.js" />
+    <Content Include="jQueryEasyUI\plugins\jquery.combobox.js" />
+    <Content Include="jQueryEasyUI\plugins\jquery.combogrid.js" />
+    <Content Include="jQueryEasyUI\plugins\jquery.combotree.js" />
+    <Content Include="jQueryEasyUI\plugins\jquery.datagrid.js" />
+    <Content Include="jQueryEasyUI\plugins\jquery.datebox.js" />
+    <Content Include="jQueryEasyUI\plugins\jquery.datetimebox.js" />
+    <Content Include="jQueryEasyUI\plugins\jquery.dialog.js" />
+    <Content Include="jQueryEasyUI\plugins\jquery.draggable.js" />
+    <Content Include="jQueryEasyUI\plugins\jquery.droppable.js" />
+    <Content Include="jQueryEasyUI\plugins\jquery.form.js" />
+    <Content Include="jQueryEasyUI\plugins\jquery.layout.js" />
+    <Content Include="jQueryEasyUI\plugins\jquery.linkbutton.js" />
+    <Content Include="jQueryEasyUI\plugins\jquery.menu.js" />
+    <Content Include="jQueryEasyUI\plugins\jquery.menubutton.js" />
+    <Content Include="jQueryEasyUI\plugins\jquery.messager.js" />
+    <Content Include="jQueryEasyUI\plugins\jquery.numberbox.js" />
+    <Content Include="jQueryEasyUI\plugins\jquery.numberspinner.js" />
+    <Content Include="jQueryEasyUI\plugins\jquery.pagination.js" />
+    <Content Include="jQueryEasyUI\plugins\jquery.panel.js" />
+    <Content Include="jQueryEasyUI\plugins\jquery.parser.js" />
+    <Content Include="jQueryEasyUI\plugins\jquery.progressbar.js" />
+    <Content Include="jQueryEasyUI\plugins\jquery.propertygrid.js" />
+    <Content Include="jQueryEasyUI\plugins\jquery.resizable.js" />
+    <Content Include="jQueryEasyUI\plugins\jquery.searchbox.js" />
+    <Content Include="jQueryEasyUI\plugins\jquery.slider.js" />
+    <Content Include="jQueryEasyUI\plugins\jquery.spinner.js" />
+    <Content Include="jQueryEasyUI\plugins\jquery.splitbutton.js" />
+    <Content Include="jQueryEasyUI\plugins\jquery.tabs.js" />
+    <Content Include="jQueryEasyUI\plugins\jquery.timespinner.js" />
+    <Content Include="jQueryEasyUI\plugins\jquery.tree.js" />
+    <Content Include="jQueryEasyUI\plugins\jquery.treegrid.js" />
+    <Content Include="jQueryEasyUI\plugins\jquery.validatebox.js" />
+    <Content Include="jQueryEasyUI\plugins\jquery.window.js" />
+    <Content Include="jQueryEasyUI\themes\cupertino\accordion.css" />
+    <Content Include="jQueryEasyUI\themes\cupertino\calendar.css" />
+    <Content Include="jQueryEasyUI\themes\cupertino\combo.css" />
+    <Content Include="jQueryEasyUI\themes\cupertino\combobox.css" />
+    <Content Include="jQueryEasyUI\themes\cupertino\datagrid.css" />
+    <Content Include="jQueryEasyUI\themes\cupertino\datebox.css" />
+    <Content Include="jQueryEasyUI\themes\cupertino\dialog.css" />
+    <Content Include="jQueryEasyUI\themes\cupertino\easyui.css" />
+    <Content Include="jQueryEasyUI\themes\cupertino\images\blank.gif" />
+    <Content Include="jQueryEasyUI\themes\cupertino\images\calendar_nextmonth.gif" />
+    <Content Include="jQueryEasyUI\themes\cupertino\images\calendar_nextyear.gif" />
+    <Content Include="jQueryEasyUI\themes\cupertino\images\calendar_prevmonth.gif" />
+    <Content Include="jQueryEasyUI\themes\cupertino\images\calendar_prevyear.gif" />
+    <Content Include="jQueryEasyUI\themes\cupertino\images\datagrid_row_collapse.gif" />
+    <Content Include="jQueryEasyUI\themes\cupertino\images\datagrid_row_expand.gif" />
+    <Content Include="jQueryEasyUI\themes\cupertino\images\datebox_arrow.png" />
+    <Content Include="jQueryEasyUI\themes\cupertino\images\menu.gif" />
+    <Content Include="jQueryEasyUI\themes\cupertino\images\menu_downarrow.png" />
+    <Content Include="jQueryEasyUI\themes\cupertino\images\menu_rightarrow.png" />
+    <Content Include="jQueryEasyUI\themes\cupertino\images\menu_sep.png" />
+    <Content Include="jQueryEasyUI\themes\cupertino\images\menu_split_downarrow.png" />
+    <Content Include="jQueryEasyUI\themes\cupertino\images\messager_error.gif" />
+    <Content Include="jQueryEasyUI\themes\cupertino\images\messager_info.gif" />
+    <Content Include="jQueryEasyUI\themes\cupertino\images\messager_question.gif" />
+    <Content Include="jQueryEasyUI\themes\cupertino\images\messager_warning.gif" />
+    <Content Include="jQueryEasyUI\themes\cupertino\images\pagination_loading.gif" />
+    <Content Include="jQueryEasyUI\themes\cupertino\images\panel_loading.gif" />
+    <Content Include="jQueryEasyUI\themes\cupertino\images\slider_handle.png" />
+    <Content Include="jQueryEasyUI\themes\cupertino\images\tabs_close.gif" />
+    <Content Include="jQueryEasyUI\themes\cupertino\images\tree_arrows.gif" />
+    <Content Include="jQueryEasyUI\themes\cupertino\images\tree_checkbox_0.gif" />
+    <Content Include="jQueryEasyUI\themes\cupertino\images\tree_checkbox_1.gif" />
+    <Content Include="jQueryEasyUI\themes\cupertino\images\tree_checkbox_2.gif" />
+    <Content Include="jQueryEasyUI\themes\cupertino\images\tree_dnd_no.png" />
+    <Content Include="jQueryEasyUI\themes\cupertino\images\tree_dnd_yes.png" />
+    <Content Include="jQueryEasyUI\themes\cupertino\images\tree_elbow.png" />
+    <Content Include="jQueryEasyUI\themes\cupertino\images\tree_file.gif" />
+    <Content Include="jQueryEasyUI\themes\cupertino\images\tree_folder.gif" />
+    <Content Include="jQueryEasyUI\themes\cupertino\images\tree_folder_open.gif" />
+    <Content Include="jQueryEasyUI\themes\cupertino\images\tree_loading.gif" />
+    <Content Include="jQueryEasyUI\themes\cupertino\images\ui-bg_diagonals-thick_90_eeeeee_40x40.png" />
+    <Content Include="jQueryEasyUI\themes\cupertino\images\ui-bg_flat_15_cd0a0a_40x100.png" />
+    <Content Include="jQueryEasyUI\themes\cupertino\images\ui-bg_glass_100_e4f1fb_1x400.png" />
+    <Content Include="jQueryEasyUI\themes\cupertino\images\ui-bg_glass_50_3baae3_1x400.png" />
+    <Content Include="jQueryEasyUI\themes\cupertino\images\ui-bg_glass_80_d7ebf9_1x400.png" />
+    <Content Include="jQueryEasyUI\themes\cupertino\images\ui-bg_highlight-hard_100_f2f5f7_1x100.png" />
+    <Content Include="jQueryEasyUI\themes\cupertino\images\ui-bg_highlight-hard_70_000000_1x100.png" />
+    <Content Include="jQueryEasyUI\themes\cupertino\images\ui-bg_highlight-soft_100_deedf7_1x100.png" />
+    <Content Include="jQueryEasyUI\themes\cupertino\images\ui-bg_highlight-soft_25_ffef8f_1x100.png" />
+    <Content Include="jQueryEasyUI\themes\cupertino\images\ui-icons_2694e8_256x240.png" />
+    <Content Include="jQueryEasyUI\themes\cupertino\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="jQueryEasyUI\themes\cupertino\images\ui-icons_3d80b3_256x240.png" />
+    <Content Include="jQueryEasyUI\themes\cupertino\images\ui-icons_72a7cf_256x240.png" />
+    <Content Include="jQueryEasyUI\themes\cupertino\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="jQueryEasyUI\themes\cupertino\images\validatebox_pointer.gif" />
+    <Content Include="jQueryEasyUI\themes\cupertino\images\validatebox_warning.png" />
+    <Content Include="jQueryEasyUI\themes\cupertino\layout.css" />
+    <Content Include="jQueryEasyUI\themes\cupertino\linkbutton.css" />
+    <Content Include="jQueryEasyUI\themes\cupertino\menu.css" />
+    <Content Include="jQueryEasyUI\themes\cupertino\menubutton.css" />
+    <Content Include="jQueryEasyUI\themes\cupertino\messager.css" />
+    <Content Include="jQueryEasyUI\themes\cupertino\pagination.css" />
+    <Content Include="jQueryEasyUI\themes\cupertino\panel.css" />
+    <Content Include="jQueryEasyUI\themes\cupertino\progressbar.css" />
+    <Content Include="jQueryEasyUI\themes\cupertino\propertygrid.css" />
+    <Content Include="jQueryEasyUI\themes\cupertino\searchbox.css" />
+    <Content Include="jQueryEasyUI\themes\cupertino\slider.css" />
+    <Content Include="jQueryEasyUI\themes\cupertino\spinner.css" />
+    <Content Include="jQueryEasyUI\themes\cupertino\splitbutton.css" />
+    <Content Include="jQueryEasyUI\themes\cupertino\tabs.css" />
+    <Content Include="jQueryEasyUI\themes\cupertino\tree.css" />
+    <Content Include="jQueryEasyUI\themes\cupertino\validatebox.css" />
+    <Content Include="jQueryEasyUI\themes\cupertino\window.css" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\accordion.css" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\calendar.css" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\combo.css" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\combobox.css" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\datagrid.css" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\datebox.css" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\dialog.css" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\easyui.css" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\images\blank.gif" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\images\calendar_nextmonth.gif" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\images\calendar_nextyear.gif" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\images\calendar_prevmonth.gif" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\images\calendar_prevyear.gif" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\images\datagrid_row_collapse.gif" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\images\datagrid_row_expand.gif" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\images\datebox_arrow.png" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\images\menu.gif" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\images\menu_downarrow.png" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\images\menu_rightarrow.png" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\images\menu_sep.png" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\images\menu_split_downarrow.png" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\images\messager_error.gif" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\images\messager_info.gif" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\images\messager_question.gif" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\images\messager_warning.gif" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\images\pagination_loading.gif" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\images\panel_loading.gif" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\images\slider_handle.png" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\images\tabs_close.gif" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\images\tree_arrows.gif" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\images\tree_checkbox_0.gif" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\images\tree_checkbox_1.gif" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\images\tree_checkbox_2.gif" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\images\tree_dnd_no.png" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\images\tree_dnd_yes.png" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\images\tree_elbow.png" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\images\tree_file.gif" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\images\tree_folder.gif" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\images\tree_folder_open.gif" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\images\tree_loading.gif" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\images\ui-bg_flat_30_cccccc_40x100.png" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\images\ui-bg_flat_50_5c5c5c_40x100.png" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\images\ui-bg_glass_40_ffc73d_1x400.png" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\images\ui-bg_highlight-hard_20_0972a5_1x100.png" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\images\ui-bg_highlight-soft_33_003147_1x100.png" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\images\ui-bg_highlight-soft_35_222222_1x100.png" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\images\ui-bg_highlight-soft_44_444444_1x100.png" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\images\ui-bg_highlight-soft_80_eeeeee_1x100.png" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\images\ui-bg_loop_25_000000_21x21.png" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\images\ui-icons_222222_256x240.png" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\images\ui-icons_4b8e0b_256x240.png" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\images\ui-icons_a83300_256x240.png" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\images\ui-icons_cccccc_256x240.png" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\images\validatebox_pointer.gif" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\images\validatebox_warning.png" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\layout.css" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\linkbutton.css" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\menu.css" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\menubutton.css" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\messager.css" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\pagination.css" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\panel.css" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\progressbar.css" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\propertygrid.css" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\searchbox.css" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\slider.css" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\spinner.css" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\splitbutton.css" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\tabs.css" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\tree.css" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\validatebox.css" />
+    <Content Include="jQueryEasyUI\themes\dark-hive\window.css" />
+    <Content Include="jQueryEasyUI\themes\default\accordion.css" />
+    <Content Include="jQueryEasyUI\themes\default\calendar.css" />
+    <Content Include="jQueryEasyUI\themes\default\combo.css" />
+    <Content Include="jQueryEasyUI\themes\default\combobox.css" />
+    <Content Include="jQueryEasyUI\themes\default\datagrid.css" />
+    <Content Include="jQueryEasyUI\themes\default\datebox.css" />
+    <Content Include="jQueryEasyUI\themes\default\dialog.css" />
+    <Content Include="jQueryEasyUI\themes\default\easyui.css" />
+    <Content Include="jQueryEasyUI\themes\default\images\accordion_collapse.png" />
+    <Content Include="jQueryEasyUI\themes\default\images\accordion_expand.png" />
+    <Content Include="jQueryEasyUI\themes\default\images\blank.gif" />
+    <Content Include="jQueryEasyUI\themes\default\images\button_a_bg.gif" />
+    <Content Include="jQueryEasyUI\themes\default\images\button_plain_hover.png" />
+    <Content Include="jQueryEasyUI\themes\default\images\button_span_bg.gif" />
+    <Content Include="jQueryEasyUI\themes\default\images\calendar_nextmonth.gif" />
+    <Content Include="jQueryEasyUI\themes\default\images\calendar_nextyear.gif" />
+    <Content Include="jQueryEasyUI\themes\default\images\calendar_prevmonth.gif" />
+    <Content Include="jQueryEasyUI\themes\default\images\calendar_prevyear.gif" />
+    <Content Include="jQueryEasyUI\themes\default\images\combo_arrow.gif" />
+    <Content Include="jQueryEasyUI\themes\default\images\datagrid_header_bg.gif" />
+    <Content Include="jQueryEasyUI\themes\default\images\datagrid_row_collapse.gif" />
+    <Content Include="jQueryEasyUI\themes\default\images\datagrid_row_expand.gif" />
+    <Content Include="jQueryEasyUI\themes\default\images\datagrid_sort_asc.gif" />
+    <Content Include="jQueryEasyUI\themes\default\images\datagrid_sort_desc.gif" />
+    <Content Include="jQueryEasyUI\themes\default\images\datagrid_title_bg.png" />
+    <Content Include="jQueryEasyUI\themes\default\images\datebox_arrow.png" />
+    <Content Include="jQueryEasyUI\themes\default\images\layout_arrows.png" />
+    <Content Include="jQueryEasyUI\themes\default\images\menu.gif" />
+    <Content Include="jQueryEasyUI\themes\default\images\menu_downarrow.png" />
+    <Content Include="jQueryEasyUI\themes\default\images\menu_rightarrow.png" />
+    <Content Include="jQueryEasyUI\themes\default\images\menu_sep.png" />
+    <Content Include="jQueryEasyUI\themes\default\images\menu_split_downarrow.png" />
+    <Content Include="jQueryEasyUI\themes\default\images\messager_error.gif" />
+    <Content Include="jQueryEasyUI\themes\default\images\messager_info.gif" />
+    <Content Include="jQueryEasyUI\themes\default\images\messager_question.gif" />
+    <Content Include="jQueryEasyUI\themes\default\images\messager_warning.gif" />
+    <Content Include="jQueryEasyUI\themes\default\images\pagination_first.gif" />
+    <Content Include="jQueryEasyUI\themes\default\images\pagination_last.gif" />
+    <Content Include="jQueryEasyUI\themes\default\images\pagination_load.png" />
+    <Content Include="jQueryEasyUI\themes\default\images\pagination_loading.gif" />
+    <Content Include="jQueryEasyUI\themes\default\images\pagination_next.gif" />
+    <Content Include="jQueryEasyUI\themes\default\images\pagination_prev.gif" />
+    <Content Include="jQueryEasyUI\themes\default\images\panel_loading.gif" />
+    <Content Include="jQueryEasyUI\themes\default\images\panel_title.png" />
+    <Content Include="jQueryEasyUI\themes\default\images\panel_tools.gif" />
+    <Content Include="jQueryEasyUI\themes\default\images\panel_tool_collapse.gif" />
+    <Content Include="jQueryEasyUI\themes\default\images\panel_tool_expand.gif" />
+    <Content Include="jQueryEasyUI\themes\default\images\searchbox_button.png" />
+    <Content Include="jQueryEasyUI\themes\default\images\slider_handle.png" />
+    <Content Include="jQueryEasyUI\themes\default\images\spinner_arrow_down.gif" />
+    <Content Include="jQueryEasyUI\themes\default\images\spinner_arrow_up.gif" />
+    <Content Include="jQueryEasyUI\themes\default\images\tabs_active.png" />
+    <Content Include="jQueryEasyUI\themes\default\images\tabs_close.gif" />
+    <Content Include="jQueryEasyUI\themes\default\images\tabs_enabled.png" />
+    <Content Include="jQueryEasyUI\themes\default\images\tabs_leftarrow.png" />
+    <Content Include="jQueryEasyUI\themes\default\images\tabs_rightarrow.png" />
+    <Content Include="jQueryEasyUI\themes\default\images\tree_arrows.gif" />
+    <Content Include="jQueryEasyUI\themes\default\images\tree_checkbox_0.gif" />
+    <Content Include="jQueryEasyUI\themes\default\images\tree_checkbox_1.gif" />
+    <Content Include="jQueryEasyUI\themes\default\images\tree_checkbox_2.gif" />
+    <Content Include="jQueryEasyUI\themes\default\images\tree_dnd_no.png" />
+    <Content Include="jQueryEasyUI\themes\default\images\tree_dnd_yes.png" />
+    <Content Include="jQueryEasyUI\themes\default\images\tree_elbow.png" />
+    <Content Include="jQueryEasyUI\themes\default\images\tree_file.gif" />
+    <Content Include="jQueryEasyUI\themes\default\images\tree_folder.gif" />
+    <Content Include="jQueryEasyUI\themes\default\images\tree_folder_open.gif" />
+    <Content Include="jQueryEasyUI\themes\default\images\tree_loading.gif" />
+    <Content Include="jQueryEasyUI\themes\default\images\validatebox_pointer.gif" />
+    <Content Include="jQueryEasyUI\themes\default\images\validatebox_warning.png" />
+    <Content Include="jQueryEasyUI\themes\default\layout.css" />
+    <Content Include="jQueryEasyUI\themes\default\linkbutton.css" />
+    <Content Include="jQueryEasyUI\themes\default\menu.css" />
+    <Content Include="jQueryEasyUI\themes\default\menubutton.css" />
+    <Content Include="jQueryEasyUI\themes\default\messager.css" />
+    <Content Include="jQueryEasyUI\themes\default\pagination.css" />
+    <Content Include="jQueryEasyUI\themes\default\panel.css" />
+    <Content Include="jQueryEasyUI\themes\default\progressbar.css" />
+    <Content Include="jQueryEasyUI\themes\default\propertygrid.css" />
+    <Content Include="jQueryEasyUI\themes\default\searchbox.css" />
+    <Content Include="jQueryEasyUI\themes\default\slider.css" />
+    <Content Include="jQueryEasyUI\themes\default\spinner.css" />
+    <Content Include="jQueryEasyUI\themes\default\splitbutton.css" />
+    <Content Include="jQueryEasyUI\themes\default\tabs.css" />
+    <Content Include="jQueryEasyUI\themes\default\tree.css" />
+    <Content Include="jQueryEasyUI\themes\default\validatebox.css" />
+    <Content Include="jQueryEasyUI\themes\default\window.css" />
+    <Content Include="jQueryEasyUI\themes\gray\accordion.css" />
+    <Content Include="jQueryEasyUI\themes\gray\calendar.css" />
+    <Content Include="jQueryEasyUI\themes\gray\combo.css" />
+    <Content Include="jQueryEasyUI\themes\gray\combobox.css" />
+    <Content Include="jQueryEasyUI\themes\gray\datagrid.css" />
+    <Content Include="jQueryEasyUI\themes\gray\datebox.css" />
+    <Content Include="jQueryEasyUI\themes\gray\dialog.css" />
+    <Content Include="jQueryEasyUI\themes\gray\easyui.css" />
+    <Content Include="jQueryEasyUI\themes\gray\images\accordion_collapse.png" />
+    <Content Include="jQueryEasyUI\themes\gray\images\accordion_expand.png" />
+    <Content Include="jQueryEasyUI\themes\gray\images\blank.gif" />
+    <Content Include="jQueryEasyUI\themes\gray\images\button_a_bg.gif" />
+    <Content Include="jQueryEasyUI\themes\gray\images\button_plain_hover.png" />
+    <Content Include="jQueryEasyUI\themes\gray\images\button_span_bg.gif" />
+    <Content Include="jQueryEasyUI\themes\gray\images\calendar_nextmonth.gif" />
+    <Content Include="jQueryEasyUI\themes\gray\images\calendar_nextyear.gif" />
+    <Content Include="jQueryEasyUI\themes\gray\images\calendar_prevmonth.gif" />
+    <Content Include="jQueryEasyUI\themes\gray\images\calendar_prevyear.gif" />
+    <Content Include="jQueryEasyUI\themes\gray\images\combo_arrow.gif" />
+    <Content Include="jQueryEasyUI\themes\gray\images\datagrid_header_bg.gif" />
+    <Content Include="jQueryEasyUI\themes\gray\images\datagrid_row_collapse.gif" />
+    <Content Include="jQueryEasyUI\themes\gray\images\datagrid_row_expand.gif" />
+    <Content Include="jQueryEasyUI\themes\gray\images\datagrid_sort_asc.gif" />
+    <Content Include="jQueryEasyUI\themes\gray\images\datagrid_sort_desc.gif" />
+    <Content Include="jQueryEasyUI\themes\gray\images\datagrid_title_bg.gif" />
+    <Content Include="jQueryEasyUI\themes\gray\images\datebox_arrow.png" />
+    <Content Include="jQueryEasyUI\themes\gray\images\layout_arrows.png" />
+    <Content Include="jQueryEasyUI\themes\gray\images\menu.gif" />
+    <Content Include="jQueryEasyUI\themes\gray\images\menu_downarrow.png" />
+    <Content Include="jQueryEasyUI\themes\gray\images\menu_rightarrow.png" />
+    <Content Include="jQueryEasyUI\themes\gray\images\menu_sep.png" />
+    <Content Include="jQueryEasyUI\themes\gray\images\menu_split_downarrow.png" />
+    <Content Include="jQueryEasyUI\themes\gray\images\messager_error.gif" />
+    <Content Include="jQueryEasyUI\themes\gray\images\messager_info.gif" />
+    <Content Include="jQueryEasyUI\themes\gray\images\messager_question.gif" />
+    <Content Include="jQueryEasyUI\themes\gray\images\messager_warning.gif" />
+    <Content Include="jQueryEasyUI\themes\gray\images\pagination_first.gif" />
+    <Content Include="jQueryEasyUI\themes\gray\images\pagination_last.gif" />
+    <Content Include="jQueryEasyUI\themes\gray\images\pagination_load.png" />
+    <Content Include="jQueryEasyUI\themes\gray\images\pagination_loading.gif" />
+    <Content Include="jQueryEasyUI\themes\gray\images\pagination_next.gif" />
+    <Content Include="jQueryEasyUI\themes\gray\images\pagination_prev.gif" />
+    <Content Include="jQueryEasyUI\themes\gray\images\panel_loading.gif" />
+    <Content Include="jQueryEasyUI\themes\gray\images\panel_title.gif" />
+    <Content Include="jQueryEasyUI\themes\gray\images\panel_tools.gif" />
+    <Content Include="jQueryEasyUI\themes\gray\images\panel_tool_collapse.gif" />
+    <Content Include="jQueryEasyUI\themes\gray\images\panel_tool_expand.gif" />
+    <Content Include="jQueryEasyUI\themes\gray\images\searchbox_button.png" />
+    <Content Include="jQueryEasyUI\themes\gray\images\slider_handle.png" />
+    <Content Include="jQueryEasyUI\themes\gray\images\spinner_arrow_down.gif" />
+    <Content Include="jQueryEasyUI\themes\gray\images\spinner_arrow_up.gif" />
+    <Content Include="jQueryEasyUI\themes\gray\images\tabs_close.gif" />
+    <Content Include="jQueryEasyUI\themes\gray\images\tabs_enabled.gif" />
+    <Content Include="jQueryEasyUI\themes\gray\images\tabs_leftarrow.png" />
+    <Content Include="jQueryEasyUI\themes\gray\images\tabs_rightarrow.png" />
+    <Content Include="jQueryEasyUI\themes\gray\images\tree_arrows.gif" />
+    <Content Include="jQueryEasyUI\themes\gray\images\tree_checkbox_0.gif" />
+    <Content Include="jQueryEasyUI\themes\gray\images\tree_checkbox_1.gif" />
+    <Content Include="jQueryEasyUI\themes\gray\images\tree_checkbox_2.gif" />
+    <Content Include="jQueryEasyUI\themes\gray\images\tree_dnd_no.png" />
+    <Content Include="jQueryEasyUI\themes\gray\images\tree_dnd_yes.png" />
+    <Content Include="jQueryEasyUI\themes\gray\images\tree_elbow.png" />
+    <Content Include="jQueryEasyUI\themes\gray\images\tree_file.gif" />
+    <Content Include="jQueryEasyUI\themes\gray\images\tree_folder.gif" />
+    <Content Include="jQueryEasyUI\themes\gray\images\tree_folder_open.gif" />
+    <Content Include="jQueryEasyUI\themes\gray\images\tree_loading.gif" />
+    <Content Include="jQueryEasyUI\themes\gray\images\validatebox_pointer.gif" />
+    <Content Include="jQueryEasyUI\themes\gray\images\validatebox_warning.png" />
+    <Content Include="jQueryEasyUI\themes\gray\layout.css" />
+    <Content Include="jQueryEasyUI\themes\gray\linkbutton.css" />
+    <Content Include="jQueryEasyUI\themes\gray\menu.css" />
+    <Content Include="jQueryEasyUI\themes\gray\menubutton.css" />
+    <Content Include="jQueryEasyUI\themes\gray\messager.css" />
+    <Content Include="jQueryEasyUI\themes\gray\pagination.css" />
+    <Content Include="jQueryEasyUI\themes\gray\panel.css" />
+    <Content Include="jQueryEasyUI\themes\gray\progressbar.css" />
+    <Content Include="jQueryEasyUI\themes\gray\propertygrid.css" />
+    <Content Include="jQueryEasyUI\themes\gray\searchbox.css" />
+    <Content Include="jQueryEasyUI\themes\gray\slider.css" />
+    <Content Include="jQueryEasyUI\themes\gray\spinner.css" />
+    <Content Include="jQueryEasyUI\themes\gray\splitbutton.css" />
+    <Content Include="jQueryEasyUI\themes\gray\tabs.css" />
+    <Content Include="jQueryEasyUI\themes\gray\tree.css" />
+    <Content Include="jQueryEasyUI\themes\gray\validatebox.css" />
+    <Content Include="jQueryEasyUI\themes\gray\window.css" />
+    <Content Include="jQueryEasyUI\themes\icon.css" />
+    <Content Include="jQueryEasyUI\themes\icons\back.png" />
+    <Content Include="jQueryEasyUI\themes\icons\blank.gif" />
+    <Content Include="jQueryEasyUI\themes\icons\cancel.png" />
+    <Content Include="jQueryEasyUI\themes\icons\cut.png" />
+    <Content Include="jQueryEasyUI\themes\icons\edit_add.png" />
+    <Content Include="jQueryEasyUI\themes\icons\edit_remove.png" />
+    <Content Include="jQueryEasyUI\themes\icons\filesave.png" />
+    <Content Include="jQueryEasyUI\themes\icons\help.png" />
+    <Content Include="jQueryEasyUI\themes\icons\jiantou.png" />
+    <Content Include="jQueryEasyUI\themes\icons\mini_add.png" />
+    <Content Include="jQueryEasyUI\themes\icons\mini_edit.png" />
+    <Content Include="jQueryEasyUI\themes\icons\mini_refresh.png" />
+    <Content Include="jQueryEasyUI\themes\icons\no.png" />
+    <Content Include="jQueryEasyUI\themes\icons\ok.png" />
+    <Content Include="jQueryEasyUI\themes\icons\pencil.png" />
+    <Content Include="jQueryEasyUI\themes\icons\print.png" />
+    <Content Include="jQueryEasyUI\themes\icons\redo.png" />
+    <Content Include="jQueryEasyUI\themes\icons\reload.png" />
+    <Content Include="jQueryEasyUI\themes\icons\search.png" />
+    <Content Include="jQueryEasyUI\themes\icons\sum.png" />
+    <Content Include="jQueryEasyUI\themes\icons\tip.png" />
+    <Content Include="jQueryEasyUI\themes\icons\undo.png" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\accordion.css" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\calendar.css" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\combo.css" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\combobox.css" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\datagrid.css" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\datebox.css" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\dialog.css" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\easyui.css" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\images\blank.gif" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\images\calendar_nextmonth.gif" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\images\calendar_nextyear.gif" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\images\calendar_prevmonth.gif" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\images\calendar_prevyear.gif" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\images\datagrid_row_collapse.gif" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\images\datagrid_row_expand.gif" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\images\datebox_arrow.png" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\images\menu.gif" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\images\menu_downarrow.png" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\images\menu_rightarrow.png" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\images\menu_sep.png" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\images\menu_split_downarrow.png" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\images\messager_error.gif" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\images\messager_info.gif" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\images\messager_question.gif" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\images\messager_warning.gif" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\images\pagination_loading.gif" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\images\panel_loading.gif" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\images\slider_handle.png" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\images\tabs_close.gif" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\images\tree_arrows.gif" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\images\tree_checkbox_0.gif" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\images\tree_checkbox_1.gif" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\images\tree_checkbox_2.gif" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\images\tree_dnd_no.png" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\images\tree_dnd_yes.png" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\images\tree_elbow.png" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\images\tree_file.gif" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\images\tree_folder.gif" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\images\tree_folder_open.gif" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\images\tree_loading.gif" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\images\ui-bg_diagonal-maze_20_6e4f1c_10x10.png" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\images\ui-bg_diagonal-maze_40_000000_10x10.png" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\images\ui-bg_fine-grain_10_eceadf_60x60.png" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\images\ui-bg_fine-grain_10_f8f7f6_60x60.png" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\images\ui-bg_fine-grain_15_eceadf_60x60.png" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\images\ui-bg_fine-grain_15_f7f3de_60x60.png" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\images\ui-bg_fine-grain_15_ffffff_60x60.png" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\images\ui-bg_fine-grain_65_654b24_60x60.png" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\images\ui-bg_fine-grain_68_b83400_60x60.png" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\images\ui-icons_222222_256x240.png" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\images\ui-icons_3572ac_256x240.png" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\images\ui-icons_8c291d_256x240.png" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\images\ui-icons_b83400_256x240.png" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\images\ui-icons_fbdb93_256x240.png" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\images\validatebox_pointer.gif" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\images\validatebox_warning.png" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\layout.css" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\linkbutton.css" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\menu.css" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\menubutton.css" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\messager.css" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\pagination.css" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\panel.css" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\progressbar.css" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\propertygrid.css" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\searchbox.css" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\slider.css" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\spinner.css" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\splitbutton.css" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\tabs.css" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\tree.css" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\validatebox.css" />
+    <Content Include="jQueryEasyUI\themes\pepper-grinder\window.css" />
+    <Content Include="jQueryEasyUI\themes\sunny\accordion.css" />
+    <Content Include="jQueryEasyUI\themes\sunny\calendar.css" />
+    <Content Include="jQueryEasyUI\themes\sunny\combo.css" />
+    <Content Include="jQueryEasyUI\themes\sunny\combobox.css" />
+    <Content Include="jQueryEasyUI\themes\sunny\datagrid.css" />
+    <Content Include="jQueryEasyUI\themes\sunny\datebox.css" />
+    <Content Include="jQueryEasyUI\themes\sunny\dialog.css" />
+    <Content Include="jQueryEasyUI\themes\sunny\easyui.css" />
+    <Content Include="jQueryEasyUI\themes\sunny\images\blank.gif" />
+    <Content Include="jQueryEasyUI\themes\sunny\images\calendar_nextmonth.gif" />
+    <Content Include="jQueryEasyUI\themes\sunny\images\calendar_nextyear.gif" />
+    <Content Include="jQueryEasyUI\themes\sunny\images\calendar_prevmonth.gif" />
+    <Content Include="jQueryEasyUI\themes\sunny\images\calendar_prevyear.gif" />
+    <Content Include="jQueryEasyUI\themes\sunny\images\datagrid_row_collapse.gif" />
+    <Content Include="jQueryEasyUI\themes\sunny\images\datagrid_row_expand.gif" />
+    <Content Include="jQueryEasyUI\themes\sunny\images\datebox_arrow.png" />
+    <Content Include="jQueryEasyUI\themes\sunny\images\menu.gif" />
+    <Content Include="jQueryEasyUI\themes\sunny\images\menu_downarrow.png" />
+    <Content Include="jQueryEasyUI\themes\sunny\images\menu_rightarrow.png" />
+    <Content Include="jQueryEasyUI\themes\sunny\images\menu_sep.png" />
+    <Content Include="jQueryEasyUI\themes\sunny\images\menu_split_downarrow.png" />
+    <Content Include="jQueryEasyUI\themes\sunny\images\messager_error.gif" />
+    <Content Include="jQueryEasyUI\themes\sunny\images\messager_info.gif" />
+    <Content Include="jQueryEasyUI\themes\sunny\images\messager_question.gif" />
+    <Content Include="jQueryEasyUI\themes\sunny\images\messager_warning.gif" />
+    <Content Include="jQueryEasyUI\themes\sunny\images\pagination_loading.gif" />
+    <Content Include="jQueryEasyUI\themes\sunny\images\panel_loading.gif" />
+    <Content Include="jQueryEasyUI\themes\sunny\images\slider_handle.png" />
+    <Content Include="jQueryEasyUI\themes\sunny\images\tabs_close.gif" />
+    <Content Include="jQueryEasyUI\themes\sunny\images\tree_arrows.gif" />
+    <Content Include="jQueryEasyUI\themes\sunny\images\tree_checkbox_0.gif" />
+    <Content Include="jQueryEasyUI\themes\sunny\images\tree_checkbox_1.gif" />
+    <Content Include="jQueryEasyUI\themes\sunny\images\tree_checkbox_2.gif" />
+    <Content Include="jQueryEasyUI\themes\sunny\images\tree_dnd_no.png" />
+    <Content Include="jQueryEasyUI\themes\sunny\images\tree_dnd_yes.png" />
+    <Content Include="jQueryEasyUI\themes\sunny\images\tree_elbow.png" />
+    <Content Include="jQueryEasyUI\themes\sunny\images\tree_file.gif" />
+    <Content Include="jQueryEasyUI\themes\sunny\images\tree_folder.gif" />
+    <Content Include="jQueryEasyUI\themes\sunny\images\tree_folder_open.gif" />
+    <Content Include="jQueryEasyUI\themes\sunny\images\tree_loading.gif" />
+    <Content Include="jQueryEasyUI\themes\sunny\images\ui-bg_diagonals-medium_20_d34d17_40x40.png" />
+    <Content Include="jQueryEasyUI\themes\sunny\images\ui-bg_flat_30_cccccc_40x100.png" />
+    <Content Include="jQueryEasyUI\themes\sunny\images\ui-bg_flat_50_5c5c5c_40x100.png" />
+    <Content Include="jQueryEasyUI\themes\sunny\images\ui-bg_gloss-wave_45_817865_500x100.png" />
+    <Content Include="jQueryEasyUI\themes\sunny\images\ui-bg_gloss-wave_60_fece2f_500x100.png" />
+    <Content Include="jQueryEasyUI\themes\sunny\images\ui-bg_gloss-wave_70_ffdd57_500x100.png" />
+    <Content Include="jQueryEasyUI\themes\sunny\images\ui-bg_gloss-wave_90_fff9e5_500x100.png" />
+    <Content Include="jQueryEasyUI\themes\sunny\images\ui-bg_highlight-soft_100_feeebd_1x100.png" />
+    <Content Include="jQueryEasyUI\themes\sunny\images\ui-bg_inset-soft_30_ffffff_1x100.png" />
+    <Content Include="jQueryEasyUI\themes\sunny\images\ui-icons_3d3d3d_256x240.png" />
+    <Content Include="jQueryEasyUI\themes\sunny\images\ui-icons_bd7b00_256x240.png" />
+    <Content Include="jQueryEasyUI\themes\sunny\images\ui-icons_d19405_256x240.png" />
+    <Content Include="jQueryEasyUI\themes\sunny\images\ui-icons_eb990f_256x240.png" />
+    <Content Include="jQueryEasyUI\themes\sunny\images\ui-icons_ed9f26_256x240.png" />
+    <Content Include="jQueryEasyUI\themes\sunny\images\ui-icons_fadc7a_256x240.png" />
+    <Content Include="jQueryEasyUI\themes\sunny\images\ui-icons_ffe180_256x240.png" />
+    <Content Include="jQueryEasyUI\themes\sunny\images\validatebox_pointer.gif" />
+    <Content Include="jQueryEasyUI\themes\sunny\images\validatebox_warning.png" />
+    <Content Include="jQueryEasyUI\themes\sunny\layout.css" />
+    <Content Include="jQueryEasyUI\themes\sunny\linkbutton.css" />
+    <Content Include="jQueryEasyUI\themes\sunny\menu.css" />
+    <Content Include="jQueryEasyUI\themes\sunny\menubutton.css" />
+    <Content Include="jQueryEasyUI\themes\sunny\messager.css" />
+    <Content Include="jQueryEasyUI\themes\sunny\pagination.css" />
+    <Content Include="jQueryEasyUI\themes\sunny\panel.css" />
+    <Content Include="jQueryEasyUI\themes\sunny\progressbar.css" />
+    <Content Include="jQueryEasyUI\themes\sunny\propertygrid.css" />
+    <Content Include="jQueryEasyUI\themes\sunny\searchbox.css" />
+    <Content Include="jQueryEasyUI\themes\sunny\slider.css" />
+    <Content Include="jQueryEasyUI\themes\sunny\spinner.css" />
+    <Content Include="jQueryEasyUI\themes\sunny\splitbutton.css" />
+    <Content Include="jQueryEasyUI\themes\sunny\tabs.css" />
+    <Content Include="jQueryEasyUI\themes\sunny\tree.css" />
+    <Content Include="jQueryEasyUI\themes\sunny\validatebox.css" />
+    <Content Include="jQueryEasyUI\themes\sunny\window.css" />
+    <Content Include="js\CustomersData.js" />
+    <Content Include="js\exporting.js" />
+    <Content Include="js\grid.js" />
+    <Content Include="js\highcharts.js" />
+    <Content Include="js\jquery-1.8.0.min.js" />
+    <Content Include="js\jquery-1.8.2.min.js" />
+    <Content Include="js\jquery-1.9.1.js" />
+    <Content Include="js\jquery-1.9.1.min.js" />
+    <Content Include="js\jquery.blockUI.js" />
+    <Content Include="js\jquery.ztree.all-3.5.js" />
+    <Content Include="js\jquery.ztree.all-3.5.min.js" />
+    <Content Include="js\jquery.ztree.core-3.5.js" />
+    <Content Include="js\jquery.ztree.core-3.5.min.js" />
+    <Content Include="js\jquery.ztree.excheck-3.5.js" />
+    <Content Include="js\jquery.ztree.excheck-3.5.min.js" />
+    <Content Include="js\jquery.ztree.exedit-3.5.js" />
+    <Content Include="js\jquery.ztree.exedit-3.5.min.js" />
+    <Content Include="js\jquery.ztree.exhide-3.5.js" />
+    <Content Include="js\jquery.ztree.exhide-3.5.min.js" />
+    <Content Include="js\My97DatePicker\calendar.js" />
+    <Content Include="js\My97DatePicker\config.js" />
+    <Content Include="js\My97DatePicker\lang\en.js" />
+    <Content Include="js\My97DatePicker\lang\zh-cn.js" />
+    <Content Include="js\My97DatePicker\lang\zh-tw.js" />
+    <Content Include="js\My97DatePicker\My97DatePicker.htm" />
+    <Content Include="js\My97DatePicker\skin\datePicker.gif" />
+    <Content Include="js\My97DatePicker\skin\default\datepicker.css" />
+    <Content Include="js\My97DatePicker\skin\default\img.gif" />
+    <Content Include="js\My97DatePicker\skin\WdatePicker.css" />
+    <Content Include="js\My97DatePicker\skin\whyGreen\bg.jpg" />
+    <Content Include="js\My97DatePicker\skin\whyGreen\datepicker.css" />
+    <Content Include="js\My97DatePicker\skin\whyGreen\img.gif" />
+    <Content Include="js\My97DatePicker\WdatePicker.js" />
+    <Content Include="js\myJSFrame.js" />
+    <Content Include="js\ProPara\Excel.js" />
+    <Content Include="js\ProPara\ProductionProPara.js" />
+    <Content Include="js\update8.js" />
+    <Content Include="LeftMenuTree.aspx" />
+    <Content Include="lib\images\loading.gif" />
+    <Content Include="lib\images\top.jpg" />
+    <Content Include="lib\images\topicon.gif" />
+    <Content Include="lib\jquery-validation\jquery.metadata.js" />
+    <Content Include="lib\jquery-validation\jquery.validate.min.js" />
+    <Content Include="lib\jquery-validation\messages_cn.js" />
+    <Content Include="lib\jquery-validation\version.txt" />
+    <Content Include="lib\jquery\jquery-1.3.2.min.js" />
+    <Content Include="lib\jquery\jquery-1.4.4.min.js" />
+    <Content Include="lib\jquery\jquery-1.5.2.min.js" />
+    <Content Include="lib\json2.js" />
+    <Content Include="lib\ligerUI\js\core\base.js" />
+    <Content Include="lib\ligerUI\js\ligerui.all.js" />
+    <Content Include="lib\ligerUI\js\ligerui.min.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerAccordion.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerButton.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerCheckBox.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerComboBox.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerDateEditor.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerDialog.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerDrag.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerEasyTab.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerFilter.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerForm.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerGrid.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerLayout.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerMenu.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerMenuBar.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerMessageBox.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerRadio.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerResizable.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerSpinner.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerTab.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerTextBox.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerTip.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerToolBar.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerTree.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerWindow.js" />
+    <Content Include="lib\ligerUI\skins\Aqua\css\ligerui-all.css" />
+    <Content Include="lib\ligerUI\skins\Aqua\css\ligerui-common.css" />
+    <Content Include="lib\ligerUI\skins\Aqua\css\ligerui-dialog.css" />
+    <Content Include="lib\ligerUI\skins\Aqua\css\ligerui-form.css" />
+    <Content Include="lib\ligerUI\skins\Aqua\css\ligerui-grid.css" />
+    <Content Include="lib\ligerUI\skins\Aqua\css\ligerui-layout.css" />
+    <Content Include="lib\ligerUI\skins\Aqua\css\ligerui-menu.css" />
+    <Content Include="lib\ligerUI\skins\Aqua\css\ligerui-tab.css" />
+    <Content Include="lib\ligerUI\skins\Aqua\css\ligerui-tree.css" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\common\bigloading.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\common\drop-icons.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\common\exclamation.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\common\invalid-line.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\common\loading.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\common\table.png" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\controls\bg-panel-title-over.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\controls\bg-panel-title-pressed.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\controls\bg-panel-title.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\controls\bg-tab-title-over.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\controls\bg-tab-title-pressed.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\controls\bg-tab-title.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\controls\bg-text.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\controls\bg-trigger-over.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\controls\bg-trigger-pressed.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\controls\bg-trigger.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\controls\btn-l.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\controls\btn-r.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\controls\btn.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\controls\button-bg-over.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\controls\button-bg.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\controls\checkbox.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\controls\dateeditor-bar-bg.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\controls\dateeditor-header-bg.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\controls\radio.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\dateeditor\icon-first.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\dateeditor\icon-last.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\dateeditor\icon-next.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\dateeditor\icon-prev.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\form\verify-corner.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\grid\grid-checkbox-checked.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\grid\grid-checkbox.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\grid\grid-detail-close.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\grid\grid-detail-open.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\grid\grid-tree-close.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\grid\grid-tree-open.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\grid\header-bg-over.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\grid\header-bg.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\grid\header2-bg.jpg" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\grid\popup-line.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\grid\popup-row-over.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\icon\bar-button-over.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\icon\checkbox-checked.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\icon\checkbox.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\icon\cross.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\icon\icon-close-over.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\icon\icon-close.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\icon\icon-down.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\icon\icon-drop.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\icon\icon-edited.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\icon\icon-first.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\icon\icon-last.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\icon\icon-line.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\icon\icon-load.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\icon\icon-next.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\icon\icon-prev.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\icon\icon-sort-asc.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\icon\icon-sort-desc.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\icon\icon-up.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\layout\accordion-content.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\layout\accordion-header-over.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\layout\accordion-header.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\layout\layout-header-over.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\layout\layout-header.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\layout\layout-sidebar-header.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\layout\mini-bottom.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\layout\mini-left.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\layout\mini-right.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\layout\mini-top.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\layout\panel-content.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\layout\panel-header-over.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\layout\panel-header.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\layout\tabs-bg.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\layout\tabs-item-bg.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\layout\tabs-item-left-bg.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\layout\tabs-item-over-bg.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\layout\tabs-item-right-bg.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\layout\tabs-tools.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\layout\togglebar.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\menu\menu-item-arrow.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\menu\menu-item-down.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\menu\menu-item-over-l.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\menu\menu-item-over-m.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\menu\menu-item-over-r.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\menu\menu-line-x.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\menu\menu-line-y.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\panel\bar-bg.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\panel\header-bg.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\panel\header-bg.jpg" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\panel\header2-bg.jpg" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\panel\panel-btn-l.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\panel\panel-btn-r.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\panel\panel-btn.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\panel\panel-header.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\panel\panel-menu-item-down.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\panel\panel-menu.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\panel\panel-toolbar.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\panel\panel-tools.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\tree\folder-open.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\tree\folder.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\tree\loading.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\tree\tree-leaf.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\tree\tree-level.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\tree\tree-noline.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\tree\tree-status-close.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\tree\tree-status-open.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\tree\tree-status.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\tree\tree.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\win\box-icons.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\win\box.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\win\dialog-bc.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\win\dialog-icons.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\win\dialog-tc.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\win\dialog-winbtns.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\win\dialog.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\win\taskbar-task.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\win\taskbar.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\win\taskbar.png" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\win\taskicon.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\css\all.css" />
+    <Content Include="lib\ligerUI\skins\Gray\css\common.css" />
+    <Content Include="lib\ligerUI\skins\Gray\css\dialog.css" />
+    <Content Include="lib\ligerUI\skins\Gray\css\form.css" />
+    <Content Include="lib\ligerUI\skins\Gray\css\grid.css" />
+    <Content Include="lib\ligerUI\skins\Gray\css\layout.css" />
+    <Content Include="lib\ligerUI\skins\Gray\css\tab.css" />
+    <Content Include="lib\ligerUI\skins\Gray\images\layout\accordion-header.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\layout\icon-close-over.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\layout\icon-close.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\layout\layout-header.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\layout\tabs-bg.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\layout\tabs-item-bg.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\layout\tabs-item-left-bg.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\layout\tabs-item-left-selected.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\layout\tabs-item-right-bg.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\layout\tabs-item-right-selected.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\layout\tabs-item-selected.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\layout\togglebar.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\ui\button-over.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\ui\button1.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\ui\button2.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\ui\dateeditor-bar.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\ui\dateeditor-btn-over.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\ui\dateeditor-btn.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\ui\dateeditor-thead.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\ui\grid-detail-close.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\ui\grid-detail-open.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\ui\gridalt.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\ui\gridbar.jpg" />
+    <Content Include="lib\ligerUI\skins\Gray\images\ui\grideditor.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\ui\icon-down.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\ui\icon-up.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\ui\input.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\ui\inputdisabled.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\ui\loading.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\ui\loading2.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\ui\trigger.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\win\dialog-winbtns.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\win\dialogbtn.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\win\dialogicon.gif" />
+    <Content Include="lib\ligerUI\skins\icons\add.gif" />
+    <Content Include="lib\ligerUI\skins\icons\archives.gif" />
+    <Content Include="lib\ligerUI\skins\icons\attibutes.gif" />
+    <Content Include="lib\ligerUI\skins\icons\back.gif" />
+    <Content Include="lib\ligerUI\skins\icons\bluebook.gif" />
+    <Content Include="lib\ligerUI\skins\icons\bookpen.gif" />
+    <Content Include="lib\ligerUI\skins\icons\busy.gif" />
+    <Content Include="lib\ligerUI\skins\icons\calendar.gif" />
+    <Content Include="lib\ligerUI\skins\icons\candle.gif" />
+    <Content Include="lib\ligerUI\skins\icons\coffee.gif" />
+    <Content Include="lib\ligerUI\skins\icons\comment.gif" />
+    <Content Include="lib\ligerUI\skins\icons\communication.gif" />
+    <Content Include="lib\ligerUI\skins\icons\config.gif" />
+    <Content Include="lib\ligerUI\skins\icons\customers.gif" />
+    <Content Include="lib\ligerUI\skins\icons\cut.gif" />
+    <Content Include="lib\ligerUI\skins\icons\database.gif" />
+    <Content Include="lib\ligerUI\skins\icons\delete.gif" />
+    <Content Include="lib\ligerUI\skins\icons\discuss.gif" />
+    <Content Include="lib\ligerUI\skins\icons\edit.gif" />
+    <Content Include="lib\ligerUI\skins\icons\graywarn.gif" />
+    <Content Include="lib\ligerUI\skins\icons\greenwarn.gif" />
+    <Content Include="lib\ligerUI\skins\icons\help.gif" />
+    <Content Include="lib\ligerUI\skins\icons\home.gif" />
+    <Content Include="lib\ligerUI\skins\icons\lock.gif" />
+    <Content Include="lib\ligerUI\skins\icons\logout.gif" />
+    <Content Include="lib\ligerUI\skins\icons\mailbox.gif" />
+    <Content Include="lib\ligerUI\skins\icons\memeber.gif" />
+    <Content Include="lib\ligerUI\skins\icons\modify.gif" />
+    <Content Include="lib\ligerUI\skins\icons\msn.gif" />
+    <Content Include="lib\ligerUI\skins\icons\myaccount.gif" />
+    <Content Include="lib\ligerUI\skins\icons\ok.gif" />
+    <Content Include="lib\ligerUI\skins\icons\outbox.gif" />
+    <Content Include="lib\ligerUI\skins\icons\pager.gif" />
+    <Content Include="lib\ligerUI\skins\icons\photograph.gif" />
+    <Content Include="lib\ligerUI\skins\icons\plus.gif" />
+    <Content Include="lib\ligerUI\skins\icons\prev.gif" />
+    <Content Include="lib\ligerUI\skins\icons\print.gif" />
+    <Content Include="lib\ligerUI\skins\icons\process.gif" />
+    <Content Include="lib\ligerUI\skins\icons\qq.gif" />
+    <Content Include="lib\ligerUI\skins\icons\refresh.gif" />
+    <Content Include="lib\ligerUI\skins\icons\right.gif" />
+    <Content Include="lib\ligerUI\skins\icons\role.gif" />
+    <Content Include="lib\ligerUI\skins\icons\save-disabled.gif" />
+    <Content Include="lib\ligerUI\skins\icons\save.gif" />
+    <Content Include="lib\ligerUI\skins\icons\search.gif" />
+    <Content Include="lib\ligerUI\skins\icons\search2.gif" />
+    <Content Include="lib\ligerUI\skins\icons\settings.gif" />
+    <Content Include="lib\ligerUI\skins\icons\true.gif" />
+    <Content Include="lib\ligerUI\skins\icons\up.gif" />
+    <Content Include="lib\ligerUI\skins\ligerui-icons.css" />
+    <Content Include="lib\ligerUI\skins\Silvery\css\form.css" />
+    <Content Include="lib\ligerUI\skins\Silvery\css\grid.css" />
+    <Content Include="lib\ligerUI\skins\Silvery\css\layout.css" />
+    <Content Include="lib\ligerUI\skins\Silvery\css\style.css" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\form\checkboxradio.gif" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\form\icon-down-over.gif" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\form\icon-down.gif" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\form\icon-up-over.gif" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\form\icon-up.gif" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\form\invalid_line.gif" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\form\text-date-icon.gif" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\form\text-down-icon.gif" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\form\text-focus.gif" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\form\text-l-focus.gif" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\form\text-l-over.gif" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\form\text-l.gif" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\form\text-over.gif" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\form\text-r-focus.gif" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\form\text-r-over.gif" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\form\text-r.gif" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\form\text.gif" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\grid\gridheaderbg.jpg" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\layout\accordion-header-over.jpg" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\layout\accordion-header.jpg" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\layout\layout-header-over.jpg" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\layout\layout-header.jpg" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\layout\tabs-bg.jpg" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\layout\tabs-item-bg.jpg" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\layout\tabs-item-left-bg.gif" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\layout\tabs-item-over-bg.gif" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\layout\tabs-item-right-bg.gif" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\layout\tabs-tools.gif" />
+    <Content Include="Login.aspx" />
+    <Content Include="Main.aspx" />
+    <Content Include="MenuManage\EditMenu.xml" />
+    <Content Include="MenuManage\ManageMenu.aspx" />
+    <Content Include="MenuManage\ManageOrgUser.aspx" />
+    <Content Include="MenuManage\ManagePower.aspx" />
+    <Content Include="MenuManage\ManageRole.aspx" />
+    <Content Include="MenuManage\ManageRolePower.aspx" />
+    <Content Include="MenuManage\ManageRoleUser.aspx" />
+    <Content Include="MenuManage\ManageTreeMenu.aspx" />
+    <Content Include="MenuManage\RoleList.aspx" />
+    <Content Include="MenuManage\ManageBC.aspx" />
+    <Content Include="MenuManage\ManageBZ.aspx" />
+    <Content Include="MenuManage\ManagePB.aspx" />
+    <Content Include="ParentMember\Check.aspx" />
+    <Content Include="ParentMember\Demo.aspx" />
+    <Content Include="ParentMember\ManageMember.aspx" />
+    <Content Include="ParentMember\ManageParent.aspx" />
+    <Content Include="ParentMember\ManagePlan.aspx" />
+    <Content Include="ParentMember\PlanDown_MZ.aspx" />
+    <Content Include="ParentMember\PlanDown_ZC.aspx" />
+    <Content Include="PerformanceAlarm\Unit_Performance_Evaluation.aspx" />
+    <Content Include="PerformanceAlarm\WarningThreshold.aspx" />
+    <Content Include="ProPara\BenchmarkReference.aspx" />
+    <Content Include="ProPara\BoilerCalculation.aspx" />
+    <Content Include="ProPara\EconomicEvaluation.aspx" />
+    <Content Include="ProPara\ProductionProPara.aspx" />
+    <Content Include="ProPara\SteamTurbine.aspx" />
+    <Content Include="RealTimeMonitor\RealTime.aspx" />
+    <Content Include="ReportManage\ConsumeReport.aspx" />
+    <Content Include="RootMenu.aspx" />
+    <Content Include="Route\AreaManage.aspx" />
+    <Content Include="Route\AreaSelect.aspx" />
+    <Content Include="Route\ManageArea.aspx" />
+    <Content Include="Route\RouteManageNew.aspx" />
+    <Content Include="Route\ManageRoute.aspx" />
+    <Content Include="StatisticalComparison\CompanyConsume.aspx" />
+    <Content Include="StatisticalComparison\EnergyLossIndicator.aspx" />
+    <Content Include="StatisticalComparison\HorizontalComparison.aspx" />
+    <Content Include="StatisticalComparison\HorizontalContrastSearch.aspx" />
+    <Content Include="StatisticalComparison\IndicatorSearch.aspx" />
+    <Content Include="StatisticalComparison\OnlineTest\BrowserThemalTemplate.aspx" />
+    <Content Include="StatisticalComparison\OnlineTest\DisplayReport.aspx" />
+    <Content Include="StatisticalComparison\OnlineTest\EditThermalTestCfg.aspx" />
+    <Content Include="StatisticalComparison\OnlineTest\StartExperiment.aspx" />
+    <Content Include="StatisticalComparison\OnlineTest\ViewExpriment.aspx" />
+    <Content Include="StatisticalComparison\StandardAnalysis.aspx" />
+    <Content Include="StatisticalComparison\UnitConsumeSteam.aspx" />
+    <Content Include="StatisticalComparison\VerticalContrastSearch.aspx" />
+    <Content Include="Task\DjTaskNew.aspx" />
+    <Content Include="Task\InsertHomeData.aspx" />
+    <Content Include="Task\XjTaskNew.aspx" />
+    <Content Include="Tend\ComparaAnalysis.aspx" />
+    <Content Include="Tend\CompareAnalyse.aspx" />
+    <Content Include="Tend\RealQuery.aspx" />
+    <Content Include="Welcome.html" />
+    <Content Include="Welcome_2.html" />
+    <Content Include="Xml\WebMenu.xml">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConsumeIndicator\Chart.aspx.cs">
+      <DependentUpon>Chart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsumeIndicator\Chart.aspx.designer.cs">
+      <DependentUpon>Chart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsumeIndicator\ChartDetail.aspx.cs">
+      <DependentUpon>ChartDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsumeIndicator\ChartDetail.aspx.designer.cs">
+      <DependentUpon>ChartDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsumeIndicator\data.aspx.cs">
+      <DependentUpon>data.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsumeIndicator\data.aspx.designer.cs">
+      <DependentUpon>data.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsumeIndicator\InsertChartDetail.aspx.cs">
+      <DependentUpon>InsertChartDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsumeIndicator\InsertChartDetail.aspx.designer.cs">
+      <DependentUpon>InsertChartDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsumeIndicator\InsertData.aspx.cs">
+      <DependentUpon>InsertData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsumeIndicator\InsertData.aspx.designer.cs">
+      <DependentUpon>InsertData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentPage.aspx.cs">
+      <DependentUpon>ContentPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentPage.aspx.designer.cs">
+      <DependentUpon>ContentPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataFile\GetBenchmarkReference.aspx.cs">
+      <DependentUpon>GetBenchmarkReference.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataFile\GetBenchmarkReference.aspx.designer.cs">
+      <DependentUpon>GetBenchmarkReference.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataFile\GetBoilerCalculation.aspx.cs">
+      <DependentUpon>GetBoilerCalculation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataFile\GetBoilerCalculation.aspx.designer.cs">
+      <DependentUpon>GetBoilerCalculation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataFile\GetCompareAnalyseData.aspx.cs">
+      <DependentUpon>GetCompareAnalyseData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataFile\GetCompareAnalyseData.aspx.designer.cs">
+      <DependentUpon>GetCompareAnalyseData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataFile\GetProductionProPara.aspx.cs">
+      <DependentUpon>GetProductionProPara.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataFile\GetProductionProPara.aspx.designer.cs">
+      <DependentUpon>GetProductionProPara.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataFile\GetRealQueryData.aspx.cs">
+      <DependentUpon>GetRealQueryData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataFile\GetRealQueryData.aspx.designer.cs">
+      <DependentUpon>GetRealQueryData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataFile\GetSteamTurbine.aspx.cs">
+      <DependentUpon>GetSteamTurbine.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataFile\GetSteamTurbine.aspx.designer.cs">
+      <DependentUpon>GetSteamTurbine.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataFile\GETWarningThresholdData.aspx.cs">
+      <DependentUpon>GETWarningThresholdData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataFile\GETWarningThresholdData.aspx.designer.cs">
+      <DependentUpon>GETWarningThresholdData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataFile\Get_Chart_Data.aspx.cs">
+      <DependentUpon>Get_Chart_Data.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataFile\Get_Chart_Data.aspx.designer.cs">
+      <DependentUpon>Get_Chart_Data.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataManage\UnitDataManage.aspx.cs">
+      <DependentUpon>UnitDataManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataManage\UnitDataManage.aspx.designer.cs">
+      <DependentUpon>UnitDataManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Device\Device.aspx.cs">
+      <DependentUpon>Device.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Device\Device.aspx.designer.cs">
+      <DependentUpon>Device.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Device\DevNew.aspx.cs">
+      <DependentUpon>DevNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Device\DevNew.aspx.designer.cs">
+      <DependentUpon>DevNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Device\msgInfo.aspx.cs">
+      <DependentUpon>msgInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Device\msgInfo.aspx.designer.cs">
+      <DependentUpon>msgInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EquipmentReliable\Analyse.aspx.cs">
+      <DependentUpon>Analyse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EquipmentReliable\Analyse.aspx.designer.cs">
+      <DependentUpon>Analyse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EquipmentReliable\Analysis.aspx.cs">
+      <DependentUpon>Analysis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EquipmentReliable\Analysis.aspx.designer.cs">
+      <DependentUpon>Analysis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EquipmentReliable\IndicatorQuery.aspx.cs">
+      <DependentUpon>IndicatorQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EquipmentReliable\IndicatorQuery.aspx.designer.cs">
+      <DependentUpon>IndicatorQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EquipmentReliable\Monitor.aspx.cs">
+      <DependentUpon>Monitor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EquipmentReliable\Monitor.aspx.designer.cs">
+      <DependentUpon>Monitor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EquipmentReliable\ProcessParameter.aspx.cs">
+      <DependentUpon>ProcessParameter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EquipmentReliable\ProcessParameter.aspx.designer.cs">
+      <DependentUpon>ProcessParameter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EquipmentReliable\ReliabilityDescription.aspx.cs">
+      <DependentUpon>ReliabilityDescription.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EquipmentReliable\ReliabilityDescription.aspx.designer.cs">
+      <DependentUpon>ReliabilityDescription.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EquipmentReliable\UnplannedOutageEdit.aspx.cs">
+      <DependentUpon>UnplannedOutageEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EquipmentReliable\UnplannedOutageEdit.aspx.designer.cs">
+      <DependentUpon>UnplannedOutageEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handles\ConsumeIndicator\ChartDetail.ashx.cs">
+      <DependentUpon>ChartDetail.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handles\ConsumeIndicator\UnitConsume.ashx.cs">
+      <DependentUpon>UnitConsume.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handles\HomePage\HomePage.ashx.cs">
+      <DependentUpon>HomePage.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handles\ReliableAnalysis.ashx.cs">
+      <DependentUpon>ReliableAnalysis.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handles\StatisticalComparison\AllConsume.ashx.cs">
+      <DependentUpon>AllConsume.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handles\StatisticalComparison\CompanyChartConsume.ashx.cs">
+      <DependentUpon>CompanyChartConsume.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handles\StatisticalComparison\CompanyConsume.ashx.cs">
+      <DependentUpon>CompanyConsume.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handles\StatisticalComparison\ConsumeDb.ashx.cs">
+      <DependentUpon>ConsumeDb.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handles\StatisticalComparison\EnergyLossIndicator.ashx.cs">
+      <DependentUpon>EnergyLossIndicator.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handles\StatisticalComparison\IndicatorSearch.ashx.cs">
+      <DependentUpon>IndicatorSearch.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handles\StatisticalComparison\IndicatorSearchBoiler.ashx.cs">
+      <DependentUpon>IndicatorSearchBoiler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handles\StatisticalComparison\UnitConsumeBoiler.ashx.cs">
+      <DependentUpon>UnitConsumeBoiler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handles\StatisticalComparison\UnitConsumeSteam.ashx.cs">
+      <DependentUpon>UnitConsumeSteam.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handles\StatisticalComparison\VerticalContrastSearch.ashx.cs">
+      <DependentUpon>VerticalContrastSearch.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Head.aspx.cs">
+      <DependentUpon>Head.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Head.aspx.designer.cs">
+      <DependentUpon>Head.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage.aspx.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomePage.aspx.designer.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LeftMenuTree.aspx.cs">
+      <DependentUpon>LeftMenuTree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LeftMenuTree.aspx.designer.cs">
+      <DependentUpon>LeftMenuTree.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main.aspx.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main.aspx.designer.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MenuManage\ManageMenu.aspx.cs">
+      <DependentUpon>ManageMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MenuManage\ManageMenu.aspx.designer.cs">
+      <DependentUpon>ManageMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MenuManage\ManageOrgUser.aspx.cs">
+      <DependentUpon>ManageOrgUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MenuManage\ManageOrgUser.aspx.designer.cs">
+      <DependentUpon>ManageOrgUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MenuManage\ManagePower.aspx.cs">
+      <DependentUpon>ManagePower.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MenuManage\ManagePower.aspx.designer.cs">
+      <DependentUpon>ManagePower.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MenuManage\ManageRole.aspx.cs">
+      <DependentUpon>ManageRole.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MenuManage\ManageRole.aspx.designer.cs">
+      <DependentUpon>ManageRole.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MenuManage\ManageRolePower.aspx.cs">
+      <DependentUpon>ManageRolePower.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MenuManage\ManageRolePower.aspx.designer.cs">
+      <DependentUpon>ManageRolePower.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MenuManage\ManageRoleUser.aspx.cs">
+      <DependentUpon>ManageRoleUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MenuManage\ManageRoleUser.aspx.designer.cs">
+      <DependentUpon>ManageRoleUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MenuManage\ManageTreeMenu.aspx.cs">
+      <DependentUpon>ManageTreeMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MenuManage\ManageTreeMenu.aspx.designer.cs">
+      <DependentUpon>ManageTreeMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MenuManage\RoleList.aspx.cs">
+      <DependentUpon>RoleList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MenuManage\RoleList.aspx.designer.cs">
+      <DependentUpon>RoleList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MenuManage\ManageBC.aspx.cs">
+      <DependentUpon>ManageBC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MenuManage\ManageBC.aspx.designer.cs">
+      <DependentUpon>ManageBC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MenuManage\ManageBZ.aspx.cs">
+      <DependentUpon>ManageBZ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MenuManage\ManageBZ.aspx.designer.cs">
+      <DependentUpon>ManageBZ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MenuManage\ManagePB.aspx.cs">
+      <DependentUpon>ManagePB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MenuManage\ManagePB.aspx.designer.cs">
+      <DependentUpon>ManagePB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ParentMember\Check.aspx.cs">
+      <DependentUpon>Check.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ParentMember\Check.aspx.designer.cs">
+      <DependentUpon>Check.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ParentMember\Demo.aspx.cs">
+      <DependentUpon>Demo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ParentMember\Demo.aspx.designer.cs">
+      <DependentUpon>Demo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ParentMember\ManageMember.aspx.cs">
+      <DependentUpon>ManageMember.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ParentMember\ManageMember.aspx.designer.cs">
+      <DependentUpon>ManageMember.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ParentMember\ManageParent.aspx.cs">
+      <DependentUpon>ManageParent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ParentMember\ManageParent.aspx.designer.cs">
+      <DependentUpon>ManageParent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ParentMember\ManagePlan.aspx.cs">
+      <DependentUpon>ManagePlan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ParentMember\ManagePlan.aspx.designer.cs">
+      <DependentUpon>ManagePlan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ParentMember\PlanDown_MZ.aspx.cs">
+      <DependentUpon>PlanDown_MZ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ParentMember\PlanDown_MZ.aspx.designer.cs">
+      <DependentUpon>PlanDown_MZ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ParentMember\PlanDown_ZC.aspx.cs">
+      <DependentUpon>PlanDown_ZC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ParentMember\PlanDown_ZC.aspx.designer.cs">
+      <DependentUpon>PlanDown_ZC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PerformanceAlarm\Unit_Performance_Evaluation.aspx.cs">
+      <DependentUpon>Unit_Performance_Evaluation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PerformanceAlarm\Unit_Performance_Evaluation.aspx.designer.cs">
+      <DependentUpon>Unit_Performance_Evaluation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PerformanceAlarm\WarningThreshold.aspx.cs">
+      <DependentUpon>WarningThreshold.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PerformanceAlarm\WarningThreshold.aspx.designer.cs">
+      <DependentUpon>WarningThreshold.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProPara\BenchmarkReference.aspx.cs">
+      <DependentUpon>BenchmarkReference.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProPara\BenchmarkReference.aspx.designer.cs">
+      <DependentUpon>BenchmarkReference.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProPara\BoilerCalculation.aspx.cs">
+      <DependentUpon>BoilerCalculation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProPara\BoilerCalculation.aspx.designer.cs">
+      <DependentUpon>BoilerCalculation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProPara\EconomicEvaluation.aspx.cs">
+      <DependentUpon>EconomicEvaluation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProPara\EconomicEvaluation.aspx.designer.cs">
+      <DependentUpon>EconomicEvaluation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProPara\ProductionProPara.aspx.cs">
+      <DependentUpon>ProductionProPara.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProPara\ProductionProPara.aspx.designer.cs">
+      <DependentUpon>ProductionProPara.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProPara\SteamTurbine.aspx.cs">
+      <DependentUpon>SteamTurbine.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProPara\SteamTurbine.aspx.designer.cs">
+      <DependentUpon>SteamTurbine.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RealTimeMonitor\RealTime.aspx.cs">
+      <DependentUpon>RealTime.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RealTimeMonitor\RealTime.aspx.designer.cs">
+      <DependentUpon>RealTime.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportManage\ConsumeReport.aspx.cs">
+      <DependentUpon>ConsumeReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportManage\ConsumeReport.aspx.designer.cs">
+      <DependentUpon>ConsumeReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RootMenu.aspx.cs">
+      <DependentUpon>RootMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RootMenu.aspx.designer.cs">
+      <DependentUpon>RootMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Route\AreaManage.aspx.cs">
+      <DependentUpon>AreaManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Route\AreaManage.aspx.designer.cs">
+      <DependentUpon>AreaManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Route\AreaSelect.aspx.cs">
+      <DependentUpon>AreaSelect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Route\AreaSelect.aspx.designer.cs">
+      <DependentUpon>AreaSelect.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Route\ManageArea.aspx.cs">
+      <DependentUpon>ManageArea.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Route\ManageArea.aspx.designer.cs">
+      <DependentUpon>ManageArea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Route\RouteManageNew.aspx.cs">
+      <DependentUpon>RouteManageNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Route\RouteManageNew.aspx.designer.cs">
+      <DependentUpon>RouteManageNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Route\ManageRoute.aspx.cs">
+      <DependentUpon>ManageRoute.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Route\ManageRoute.aspx.designer.cs">
+      <DependentUpon>ManageRoute.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StatisticalComparison\CompanyConsume.aspx.cs">
+      <DependentUpon>CompanyConsume.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StatisticalComparison\CompanyConsume.aspx.designer.cs">
+      <DependentUpon>CompanyConsume.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StatisticalComparison\EnergyLossIndicator.aspx.cs">
+      <DependentUpon>EnergyLossIndicator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StatisticalComparison\EnergyLossIndicator.aspx.designer.cs">
+      <DependentUpon>EnergyLossIndicator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StatisticalComparison\HorizontalComparison.aspx.cs">
+      <DependentUpon>HorizontalComparison.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StatisticalComparison\HorizontalComparison.aspx.designer.cs">
+      <DependentUpon>HorizontalComparison.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StatisticalComparison\HorizontalContrastSearch.aspx.cs">
+      <DependentUpon>HorizontalContrastSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StatisticalComparison\HorizontalContrastSearch.aspx.designer.cs">
+      <DependentUpon>HorizontalContrastSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StatisticalComparison\IndicatorSearch.aspx.cs">
+      <DependentUpon>IndicatorSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StatisticalComparison\IndicatorSearch.aspx.designer.cs">
+      <DependentUpon>IndicatorSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StatisticalComparison\OnlineTest\BrowserThemalTemplate.aspx.cs">
+      <DependentUpon>BrowserThemalTemplate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StatisticalComparison\OnlineTest\BrowserThemalTemplate.aspx.designer.cs">
+      <DependentUpon>BrowserThemalTemplate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StatisticalComparison\OnlineTest\DisplayReport.aspx.cs">
+      <DependentUpon>DisplayReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StatisticalComparison\OnlineTest\DisplayReport.aspx.designer.cs">
+      <DependentUpon>DisplayReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StatisticalComparison\OnlineTest\EditThermalTestCfg.aspx.cs">
+      <DependentUpon>EditThermalTestCfg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StatisticalComparison\OnlineTest\EditThermalTestCfg.aspx.designer.cs">
+      <DependentUpon>EditThermalTestCfg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StatisticalComparison\OnlineTest\StartExperiment.aspx.cs">
+      <DependentUpon>StartExperiment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StatisticalComparison\OnlineTest\StartExperiment.aspx.designer.cs">
+      <DependentUpon>StartExperiment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StatisticalComparison\OnlineTest\ViewExpriment.aspx.cs">
+      <DependentUpon>ViewExpriment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StatisticalComparison\OnlineTest\ViewExpriment.aspx.designer.cs">
+      <DependentUpon>ViewExpriment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StatisticalComparison\StandardAnalysis.aspx.cs">
+      <DependentUpon>StandardAnalysis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StatisticalComparison\StandardAnalysis.aspx.designer.cs">
+      <DependentUpon>StandardAnalysis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StatisticalComparison\UnitConsumeSteam.aspx.cs">
+      <DependentUpon>UnitConsumeSteam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StatisticalComparison\UnitConsumeSteam.aspx.designer.cs">
+      <DependentUpon>UnitConsumeSteam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StatisticalComparison\VerticalContrastSearch.aspx.cs">
+      <DependentUpon>VerticalContrastSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StatisticalComparison\VerticalContrastSearch.aspx.designer.cs">
+      <DependentUpon>VerticalContrastSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Task\DjTaskNew.aspx.cs">
+      <DependentUpon>DjTaskNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Task\DjTaskNew.aspx.designer.cs">
+      <DependentUpon>DjTaskNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Task\InsertHomeData.aspx.cs">
+      <DependentUpon>InsertHomeData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Task\InsertHomeData.aspx.designer.cs">
+      <DependentUpon>InsertHomeData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Task\XjTaskNew.aspx.cs">
+      <DependentUpon>XjTaskNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Task\XjTaskNew.aspx.designer.cs">
+      <DependentUpon>XjTaskNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tend\ComparaAnalysis.aspx.cs">
+      <DependentUpon>ComparaAnalysis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tend\ComparaAnalysis.aspx.designer.cs">
+      <DependentUpon>ComparaAnalysis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tend\CompareAnalyse.aspx.cs">
+      <DependentUpon>CompareAnalyse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tend\CompareAnalyse.aspx.designer.cs">
+      <DependentUpon>CompareAnalyse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tend\RealQuery.aspx.cs">
+      <DependentUpon>RealQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tend\RealQuery.aspx.designer.cs">
+      <DependentUpon>RealQuery.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="config.ini" />
+    <None Include="Device\vssver2.scc" />
+    <None Include="Files\Thumbs.db" />
+    <Content Include="Handles\ReliableAnalysis.ashx" />
+    <Content Include="Handles\StatisticalComparison\EnergyLossIndicator.ashx" />
+    <Content Include="Handles\StatisticalComparison\UnitConsumeSteam.ashx" />
+    <Content Include="Handles\StatisticalComparison\UnitConsumeBoiler.ashx" />
+    <Content Include="Handles\StatisticalComparison\AllConsume.ashx" />
+    <Content Include="Handles\StatisticalComparison\CompanyConsume.ashx" />
+    <Content Include="Handles\HomePage\HomePage.ashx" />
+    <Content Include="Handles\ConsumeIndicator\UnitConsume.ashx" />
+    <Content Include="Handles\StatisticalComparison\CompanyChartConsume.ashx" />
+    <Content Include="Handles\StatisticalComparison\ConsumeDb.ashx" />
+    <Content Include="Handles\ConsumeIndicator\ChartDetail.ashx" />
+    <Content Include="Handles\StatisticalComparison\IndicatorSearch.ashx" />
+    <Content Include="Handles\StatisticalComparison\IndicatorSearchBoiler.ashx" />
+    <Content Include="Handles\StatisticalComparison\VerticalContrastSearch.ashx" />
+    <None Include="jQueryEasyUI\themes\default\images\Thumbs.db" />
+    <None Include="jQueryEasyUI\themes\gray\images\Thumbs.db" />
+    <None Include="lib\ligerUI\skins\icons\新建 Microsoft Office Excel 工作表.xlsx" />
+    <None Include="LoadDown\汽机前轴螺丝.doc" />
+    <None Include="LoadDown\汽机罗斯1.doc" />
+    <None Include="PIImages\江苏分公司\扬州电厂\6机组\Boiler.PDI" />
+    <None Include="PIImages\江苏分公司\扬州电厂\6机组\ChangYongDian.pdi" />
+    <None Include="PIImages\江苏分公司\扬州电厂\6机组\SteamTurbine.pdi" />
+    <None Include="PIImages\江苏分公司\扬州电厂\6机组\ZhenDong.pdi" />
+    <None Include="PIImages\江苏分公司\扬州电厂\7机组\Boiler.pdi" />
+    <None Include="PIImages\江苏分公司\扬州电厂\7机组\ChangYongDian.pdi" />
+    <None Include="PIImages\江苏分公司\扬州电厂\7机组\SteamTurbine.pdi" />
+    <None Include="PIImages\江苏分公司\扬州电厂\7机组\ZhenDong.pdi" />
+    <None Include="PIImages\江苏分公司\望亭电厂\14机组\Boiler.PDI" />
+    <None Include="PIImages\江苏分公司\望亭电厂\14机组\ChangYongDian.pdi" />
+    <None Include="PIImages\江苏分公司\望亭电厂\14机组\SteamTurbine.pdi" />
+    <None Include="PIImages\江苏分公司\望亭电厂\14机组\ZhenDong.pdi" />
+    <None Include="Route\vssver2.scc" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{E391F7BB-DBEE-4352-A76D-4FF23B08B7B9}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entity\Entity.csproj">
+      <Project>{276782E1-54EB-4825-A328-11A1ED76A7FD}</Project>
+      <Name>Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SAC.Helper\SAC.Helper.csproj">
+      <Project>{93D455AD-B957-4093-9C4B-0D59FDFBB285}</Project>
+      <Name>SAC.Helper</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="DataClass\" />
+    <Folder Include="EquipmentReliable\upfiles\" />
+    <Folder Include="lib\ligerUI\skins\Gray\NewFolder1\" />
+    <Folder Include="lib\ligerUI\skins\Gray\NewFolder2\" />
+    <Folder Include="PIImages\江苏分公司\望亭电厂\11机组\" />
+    <Folder Include="ProPara\upfiles\" />
+    <Folder Include="ReportManage\doc\" />
+    <Folder Include="ReportManage\img\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>10086</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

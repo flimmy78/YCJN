@@ -1,0 +1,135 @@
+﻿<?xml version="1.0"?>
+<ROOT caption="首页" visible="1" order="0" owner=",管理员,0013,0015,CZ,ZHBGSDAZZ,001," FileName="HomePage.aspx">
+    <node caption="能耗指标" visible="1" order="0" owner=",admin,001," FileName="">
+      <node caption="数据对标" visible="1" order="0" owner=",admin,001," FileName="ConsumeIndicator/data.aspx">
+      </node>
+      <node caption="图表对标" visible="1" order="0" owner=",admin,001," FileName="ConsumeIndicator/Chart.aspx">
+      </node>
+    </node>
+  <node caption="实时监控" visible="1" order="0" owner=",admin,001," FileName="">
+    <node caption="江苏分公司" visible="1" order="0" owner=",admin,001," FileName="">
+      <node caption="扬州电厂" visible="1" order="0" owner=",admin,001," FileName="">
+        <node caption="#6机组" visible="1" order="0" owner=",admin,001," FileName="RealTimeMonitor/RealTime.aspx?name=江苏分公司/扬州电厂/6机组/ShouYe.PDI">
+          <node caption="锅炉" visible="1" order="0" owner=",admin,001," FileName="RealTimeMonitor/RealTime.aspx?name=江苏分公司/扬州电厂/6机组/Boiler.PDI" />
+          <node caption="汽机" visible="1" order="0" owner=",admin,001," FileName="RealTimeMonitor/RealTime.aspx?name=江苏分公司/扬州电厂/6机组/SteamTurbine.pdi" />
+          <node caption="厂用电" visible="1" order="0" owner=",admin,001," FileName="RealTimeMonitor/RealTime.aspx?name=江苏分公司/扬州电厂/6机组/ChangYongDian.pdi" />
+          <node caption="振动" visible="1" order="0" owner=",admin,001," FileName="RealTimeMonitor/RealTime.aspx?name=江苏分公司/扬州电厂/6机组/ZhenDong.pdi" />
+        </node>
+        <node caption="#7机组" visible="1" order="0" owner=",admin,001," FileName="RealTimeMonitor/RealTime.aspx?name=江苏分公司/扬州电厂/7机组/ShouYe.PDI">
+          <node caption="锅炉" visible="1" order="0" owner=",admin,001," FileName="RealTimeMonitor/RealTime.aspx?name=江苏分公司/扬州电厂/7机组/Boiler.PDI" />
+          <node caption="汽机" visible="1" order="0" owner=",admin,001," FileName="RealTimeMonitor/RealTime.aspx?name=江苏分公司/扬州电厂/7机组/SteamTurbine.pdi" />
+          <node caption="厂用电" visible="1" order="0" owner=",admin,001," FileName="RealTimeMonitor/RealTime.aspx?name=江苏分公司/扬州电厂/7机组/ChangYongDian.pdi" />
+          <node caption="振动" visible="1" order="0" owner=",admin,001," FileName="RealTimeMonitor/RealTime.aspx?name=江苏分公司/扬州电厂/7机组/ZhenDong.pdi" />
+        </node>
+      </node>
+      <node caption="望亭电厂" visible="1" order="0" owner=",admin,001," FileName="">
+        <node caption="#11机组" visible="1" order="0" owner=",admin,001," FileName="RealTimeMonitor/RealTime.aspx?name=江苏分公司/望亭电厂/11机组/ShouYe.PDI">
+          <node caption="锅炉" visible="1" order="0" owner=",admin,001," FileName="RealTimeMonitor/RealTime.aspx?name=江苏分公司/望亭电厂/11机组/Boiler.PDI" />
+          <node caption="汽机" visible="1" order="0" owner=",admin,001," FileName="RealTimeMonitor/RealTime.aspx?name=江苏分公司/望亭电厂/11机组/SteamTurbine.pdi" />
+          <node caption="厂用电" visible="1" order="0" owner=",admin,001," FileName="RealTimeMonitor/RealTime.aspx?name=江苏分公司/望亭电厂/11机组/ChangYongDian.pdi" />
+          <node caption="振动" visible="1" order="0" owner=",admin,001," FileName="RealTimeMonitor/RealTime.aspx?name=江苏分公司/望亭电厂/11机组/ZhenDong.pdi" />
+        </node>
+        <node caption="#14机组" visible="1" order="0" owner=",admin,001," FileName="RealTimeMonitor/RealTime.aspx?name=江苏分公司/望亭电厂/14机组/ShouYe.PDI">
+          <node caption="锅炉" visible="1" order="0" owner=",admin,001," FileName="RealTimeMonitor/RealTime.aspx?name=江苏分公司/望亭电厂/14机组/Boiler.PDI" />
+          <node caption="汽机" visible="1" order="0" owner=",admin,001," FileName="RealTimeMonitor/RealTime.aspx?name=江苏分公司/望亭电厂/14机组/SteamTurbine.pdi" />
+          <node caption="厂用电" visible="1" order="0" owner=",admin,001," FileName="RealTimeMonitor/RealTime.aspx?name=江苏分公司/望亭电厂/14机组/ChangYongDian.pdi" />
+          <node caption="振动" visible="1" order="0" owner=",admin,001," FileName="RealTimeMonitor/RealTime.aspx?name=江苏分公司/望亭电厂/14机组/ZhenDong.pdi" />
+        </node>
+      </node>
+    </node>
+    <node caption="内蒙分公司" visible="1" order="0" owner=",admin,001," FileName="">
+      <node caption="东华电厂" visible="1" order="0" owner=",admin,001," FileName="">
+        <node caption="#2机组" visible="1" order="0" owner=",admin,001," FileName="RealTimeMonitor/RealTime.aspx?name=内蒙分公司/东华电厂/2机组/ShouYe.PDI"  >
+          <node caption="锅炉" visible="1" order="0" owner=",admin,001," FileName="RealTimeMonitor/RealTime.aspx?name=内蒙分公司/东华电厂/2机组/Boiler.PDI" />
+          <node caption="汽机" visible="1" order="0" owner=",admin,001," FileName="RealTimeMonitor/RealTime.aspx?name=内蒙分公司/东华电厂/2机组/SteamTurbine.pdi" />
+          <node caption="厂用电" visible="1" order="0" owner=",admin,001," FileName="RealTimeMonitor/RealTime.aspx?name=内蒙分公司/东华电厂/2机组/ChangYongDian.pdi" />
+          <node caption="振动" visible="1" order="0" owner=",admin,001," FileName="RealTimeMonitor/RealTime.aspx?name=内蒙分公司/东华电厂/2机组/ZhenDong.pdi" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node caption="设备可靠性" visible="1" order="0" owner=",admin,001," FileName="">
+    <node caption="可靠性分析" visible="1" order="0" owner=",admin,001," FileName="EquipmentReliable/Analyse.aspx">
+    </node>
+    <node caption="设备可靠性监视" visible="1" order="0" owner=",admin,001," FileName="EquipmentReliable/Monitor.aspx">
+    </node>
+    <node caption="可靠性过程参数" visible="1" order="0" owner=",admin,001," FileName="EquipmentReliable/ProcessParameter.aspx">
+    </node>
+    <node caption="可靠性指标查询" visible="1" order="0" owner=",admin,001," FileName="EquipmentReliable/IndicatorQuery.aspx">
+    </node>
+  </node>
+  <node caption="趋势分析" visible="1" order="0" owner=",admin,001," FileName="">
+    <node caption="趋势查询" visible="1" order="0" owner=",admin,001," FileName="">
+      <node caption="实时数据" visible="1" order="0" owner=",admin,001," FileName="Tend/RealQuery.aspx" />
+      <node caption="关键数据" visible="1" order="0" owner=",admin,001," FileName="Tend/CompareAnalyse.aspx" />
+    </node>
+    <node caption="对比分析" visible="1" order="0" owner=",admin,001," FileName="Tend/ComparaAnalysis.aspx">
+    </node>
+  </node>
+  <node caption="统计对比" visible="1" order="0" owner=",admin,001," FileName="">
+    <node caption="机组耗差指标分析" visible="1" order="0" owner=",admin,001," FileName="StatisticalComparison/UnitConsumeSteam.aspx">
+    </node>
+    <node caption="集团公司耗差指标分析" visible="1" order="0" owner=",admin,001," FileName="StatisticalComparison/CompanyConsume.aspx">
+    </node>
+    <node caption="耗差对标" visible="1" order="0" owner=",admin,001," FileName="StatisticalComparison/StandardAnalysis.aspx">
+    </node>
+    <node caption="经济指标和设备性能指标" visible="1" order="0" owner=",admin,001," FileName="">
+      <node caption="指标查询" visible="1" order="0" owner=",admin,001," FileName="StatisticalComparison/IndicatorSearch.aspx"/>
+
+        <node caption="横向对比指标查询" visible="1" order="0" owner=",admin,001," FileName="StatisticalComparison/HorizontalComparison.aspx"/>
+      <node caption="纵向对比指标查询" visible="1" order="0" owner=",admin,001," FileName="StatisticalComparison/VerticalContrastSearch.aspx"/>
+
+    </node>
+    </node>
+  <node caption="在线试验" visible="1" order="0" owner=",admin,001," FileName="">
+    <node caption="热力性能试验" visible="1" order="0" owner=",admin,001," FileName="StatisticalComparison/OnlineTest/StartExperiment.aspx">
+    </node>
+    <node caption="查询试验报告" visible="1" order="0" owner=",admin,001," FileName="StatisticalComparison/OnlineTest/BrowserThemalTemplate.aspx">
+    </node>
+    <node caption="实验全局配置" visible="1" order="0" owner=",admin,001," FileName="StatisticalComparison/OnlineTest/EditThermalTestCfg.aspx">
+    </node>
+  </node>
+  <node caption="性能预警" visible="1" order="0" owner=",admin,001," FileName="">
+    <node caption="机组性能评估" visible="1" order="0" owner=",admin,001," FileName="PerformanceAlarm/Unit_Performance_Evaluation.aspx">
+    </node>
+    <node caption="预警阀值设置" visible="1" order="0" owner=",admin,001," FileName="PerformanceAlarm/WarningThreshold.aspx">
+    </node>
+  </node>
+  <node caption="报表管理" visible="1" order="0" owner=",admin,001," FileName="">
+    <node caption="耗差报表" visible="1" order="0" owner=",admin,001," FileName="ReportManage/ConsumeReport.aspx">
+    </node>
+    <node caption="报表查询" visible="1" order="0" owner=",admin,001," FileName="">
+    </node>
+  </node>
+  <node caption="过程参数" visible="1" order="0" owner=",admin,001," FileName="">
+    <node caption="生产过程参数" visible="1" order="0" owner=",admin,001," FileName="ProPara/ProductionProPara.aspx">
+    </node>
+    <node caption="对标基准值" visible="1" order="0" owner=",admin,001," FileName="ProPara/BenchmarkReference.aspx">
+    </node>
+    <node caption="主辅机设计参数 " visible="1" order="0" owner=",admin,001," FileName="">
+      <node caption="汽机计算所需" visible="1" order="0" owner=",admin,001," FileName="ProPara/SteamTurbine.aspx">
+      </node>
+      <node caption="锅炉计算所需" visible="1" order="0" owner=",admin,001," FileName="ProPara/BoilerCalculation.aspx">
+      </node>
+    </node>
+    <node caption="经济性评价标准" visible="1" order="0" owner=",admin,001," FileName="ProPara/EconomicEvaluation.aspx">
+    </node>
+    <node caption="首页" visible="1" order="0" owner=",admin,001," FileName="Task/InsertHomeData.aspx">
+    </node>
+
+    <node caption="数据对标" visible="1" order="0" owner=",admin,001," FileName="ConsumeIndicator/InsertData.aspx">
+    </node>
+    <node caption="图表对标" visible="1" order="0" owner=",admin,001," FileName="ConsumeIndicator/InsertChartDetail.aspx">
+    </node>
+  </node>
+  <node caption="资料管理" visible="1" order="0" owner=",admin,001," FileName="">
+    <node caption="机组资料" visible="1" order="0" owner=",admin,001," FileName="DataManage/UnitDataManage.aspx"/>
+  </node>
+  <node caption="系统管理" visible="1" order="6" owner=",admin,1,0015,CZ,ZHBGSDAZZ,001," FileName="" TreeId="" JugeTree="1">
+    <node caption="菜单管理" visible="1" order="0" owner=",admin,1,0015,CZ,ZHBGSDAZZ,001," FileName="MenuManage/ManageMenu.aspx" TreeId="" JugeTree="1" />
+    <node caption="权限分配" visible="1" order="0" owner=",admin,1,0015,CZ,ZHBGSDAZZ,001," FileName="MenuManage/RoleList.aspx" TreeId="" JugeTree="1" />
+    <node caption="角色管理" visible="1" order="0" owner=",admin,1,0015,CZ,ZHBGSDAZZ,001," FileName="MenuManage/ManageRole.aspx" TreeId="" JugeTree="1" />
+    <node caption="组织人员管理" visible="1" order="0" owner=",admin,1,0015,CZ,ZHBGSDAZZ,001," FileName="MenuManage/ManageOrgUser.aspx" TreeId="" JugeTree="1" />
+    <node caption="角色人员管理" visible="1" order="0" owner=",admin,1,0015,CZ,ZHBGSDAZZ,001," FileName="MenuManage/ManageRoleUser.aspx" TreeId="" JugeTree="1" />
+  </node>
+</ROOT>
