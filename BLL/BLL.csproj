@@ -117,10 +117,6 @@
     <Compile Include="Task\BLLTask.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\DB2Provider\DB2Provider.csproj">
-      <Project>{5FAD8A93-617A-4D6A-8482-736751E6FE1A}</Project>
-      <Name>DB2Provider</Name>
-    </ProjectReference>
     <ProjectReference Include="..\DAL\DAL.csproj">
       <Project>{CC3493BC-C1F5-4DFD-BA33-C6F9F4C5C42A}</Project>
       <Name>DAL</Name>

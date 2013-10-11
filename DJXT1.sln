@@ -17,7 +17,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SAC.Elink", "SAC.Elink\SAC.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SAC.Plink", "SAC.PiLink\SAC.Plink.csproj", "{70EBA89E-7C8A-4653-8991-A87BD803F438}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DB2Provider", "..\DB2Provider\DB2Provider.csproj", "{5FAD8A93-617A-4D6A-8482-736751E6FE1A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DB2Provider", "DB2Provider\DB2Provider.csproj", "{5FAD8A93-617A-4D6A-8482-736751E6FE1A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
