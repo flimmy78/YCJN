@@ -32,7 +32,6 @@ namespace DJXT.ReportManage
                 if (param == "seachList")
                 {
                     GetBCList();
-
                 }
             }
         }
